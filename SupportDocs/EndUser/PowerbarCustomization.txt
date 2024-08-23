@@ -1,0 +1,28 @@
+Using the Power Bar and Details Pane
+Dec 16, 2021•Knowledge
+Content
+The Power Bar appears on List Views and allows you to easily access document options.
+
+power_bar
+
+Go to More to see more options.
+
+You can customize your Power Bar options by clicking 'Customize Power Bar' in the More menu. You can select up to 5 options to appear in your Power Bar.
+
+You have the option to display either the Preview pane or the Details pane on the right-hand side by clicking the icon in the Power Bar:
+
+ details
+
+Click the X to close the pane.
+
+Details Pane
+
+The Details pane shows specific information about the selected document.
+
+Preview Pane
+
+On the Preview pane, you can also open the document in the Viewer in a separate window by clicking the pop-out icon:
+
+ preview
+
+Or, under More, you can use View in Browser to open the Viewer in a separate window, allowing all panes to display together:

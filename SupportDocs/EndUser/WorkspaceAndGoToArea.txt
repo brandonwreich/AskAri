@@ -1,0 +1,136 @@
+Workspace Overview
+May 9, 2024•Knowledge
+Content
+Table of Contents
+
+What is a Workspace?
+Recent Workspaces
+Favorite Workspaces
+Go to a Matter Option
+Using Workspaces
+Workspace Options
+Access & Sharing
+Cabinet Administrators can get Help on configuring workspaces for the cabinet here.
+
+What is a Workspace?
+NetDocuments allows shared workspaces that are based on a specific table-based profile attribute.  For example, in a law firm, a workspace could be a Matter-based view of documents, emails, etc.  Another kind of organization might choose to base their workspaces on Accounts, Projects, or Properties. For example, if you are using this as a law firm, the Cabinet Administrator would setup workspaces to be based on a Matter profile attribute.  You could then go to a workspace for any Matter that you choose. The Matter workspace will provide one view of all of the documents, messages, folders, categories, etc. for that specific Matter which are seen by all users who view that Matter.  Any changes made by anyone to a workspace, affects the view of the workspace for all users accessing it.  This feature is also referred to as a Matter-centric approach to managing your documents.
+
+If you select a cabinet in the Navigation Pane and it has workspaces enabled, you will see your Recent and Favorite workspaces for that cabinet. You will also see a list of all folders for the selected cabinet.
+
+workspace_nav
+
+Users can also access their list of Matters from the Navigation Bar:
+
+recent_matters
+
+Recent Matters (Workspaces)
+Recent Workspaces contains a list of the last 40 Matters (workspaces) that you have accessed most recently (across all cabinets) with the most recent at the top. You cannot manually add to this list; workspaces will be added to it as you open them. You can select a workspace from the Favorite Matters list and it will be added to the Recently Selected list because it was recently accessed. When you create a new document, the workspace that the document is assigned to will be automatically added to the Recent Matters list.
+
+recent_matters_list
+
+NOTE: Your Recent Matters list is different than your list of Recently Selected values that appears in the lookup dialog.
+
+Favorite Matters (Workspaces)
+Favorite Matters contains a list of all workspaces that you have Favorited (starred) across all cabinet.
+
+fav_matters_list
+
+Go to a [Matter] Button
+To navigate to or find a workspace, use the Go to a matter... button (depending on what your workspaces are called this could be different such as Go to a case, file, client, etc.) in the Navigation Bar:
+
+gotomatter
+
+Enter a Client/Matter name or number to find the workspace:
+
+select_client_matter
+
+You can click the lookup (...) ellipses and a small dialog will be displayed as shown below. This is where you search for pre-defined Client (or Matter) numbers (Keys) or names (Descriptions).
+
+Adding to your Favorite Matters list
+
+You can add a workspace to the Favorite Matters (Workspace) list by clicking the gray star next to the workspace name to turn it orange.  You would add a workspace to Favorite Matters primarily if you wanted to subsequently access it. That workspace will now be displayed under the Favorite Matters list (this list will be named based on the profile attribute that was defined by the Administrator) and can be accessed by clicking the name of the workspace.  For a law firm it would typically say Favorite Matters. You can add more workspaces (or Matters) to the Favorite Matters list for other workspaces that you will access most often.  The maximum list in Favorite Matters for each person is 350 matters at any one time. When you are no longer using a specific workspace (Matter), you can remove it from the list by clicking the yellow star to turn it blue again. It can always be added back to Favorite Workspaces if you want to use it again.
+
+NOTE: Under Settings > Application Settings, you can define whether to default the display to Favorite Workspaces or Recent Workspaces.
+
+NOTE: Your NetDocuments Administrator has the ability, if chosen, to upload a table to automatically populate the Favorite Matters list for users.  The Administrator could base this table on Matters that a user has billed time against, or Matters where you may be the working attorney, or any other criteria. If this upload table is used, then this list will already be populated for you.  You can still add other Matters or remove any that are on your list.
+
+Using a Workspace
+Selecting a workspace in the left-hand navigation pane, or finding it in the Go to a Matter... button will open that workspace.  The workspace is a view shared by all who access it. If the workspace has not been accessed previously by anyone, it will contain a basic default setup as defined initially by the Cabinet Administrator. A user who has VESA rights to the workspace can also adjust the workspace by adding more folders or Saved Searches or editing any existing folders or Saved Searches as well as adjusting the workspace description, logo, and name. That user can also re-arrange items on the workspace by going to Workspace Options > Customize Workspace.
+
+Workspaces contain following tabs:
+NOTE: Depending upon which products your organization has purchased you may see additional tabs, however, all workspaces contain at least the what is listed below.
+
+Overview Tab - Contains the workspace logo, workspace description, and any web pages defined for the workspace. The workspace description and logo may be edited under the Workspace Option dropdown, under the Customize Workspace option. See the Add Workspace Webpage article to see how to add a webpage to this tab.
+Documents Tab - Contains all information of the workspace, including Summary View and List View icons.
+The Documents Tab is the default tab displayed when navigating to the workspace.
+
+A sample workspace is listed below. A user must have E and S rights to add folders and Saved Searches to the workspaces.
+
+On the workspace page you will have the following features:
+
+Right-Click Options are available for documents and emails in the workspace summary view as shown:
+
+Adding Documents is the same as on other NetDocuments pages. When adding documents, you are presented with a list of the folders and filters in the Workspace. You also have the option to create a new folder in which to file the document. You can also "file" a document into a Workspace without putting it into a folder, unless you have set at the cabinet level to force filing in a folder. To "file" a document into a Workspace, without putting it into a folder, you must complete the profile values to match those of the Workspace. It will then be included in an existing folder with the same Document Type or other attribute or a folder that matches that attribute value will be created.
+
+When adding documents to a Workspace, if you are using folders based on Document Types, and you have created your Profile templates for static information such as Author and Office, then filing a document into a Workspace will require no manual profiling of documents. All profile data will be applied using the filing process.
+
+Workspace Views
+
+The Documents tab has both a summary view and a list view. The summary view displays all filters, folders, and Saved Searches on the workspace. The list view will show all documents and emails in the workspace.
+
+On the summary view, click Collapse All (#1) to collapse the containers. Click Expand All to display a preview of the container's contents.
+
+Click Switch to list view (#2) to display the list view of all the workspace's documents and emails. Click Switch to summary view to switch back to the summary view.
+
+Workspace Options
+By clicking on the workspace name in the top left-hand corner of the workspace, you will see the Workspace Options appear in a dropdown. These options apply to the workspace level, and not to any subfolders or documents.
+The Workspace Options are described below:
+
+Add Folder - Click Add Folder. Enter the name of the folder. Set the number of documents or items to show on the Workspace Summary View without clicking "more." Learn more about Workspace Folders.
+
+NOTE: You can enter 0 items and only the header will show in the workspace. You can click the header to show the items. Check the columns that you want to show on this folder.  They will show in the order they are listed on this dialog.  You can drag to re-order them. Profile values can also be set for the folder.  Documents will inherit these profile values when placed into the folder.
+
+Add Saved Search - Click Add Saved Search and continue the process the same as a folder.  You will also need to go to a separate browser and define a Search Criteria that you will copy and paste into this Saved Search criteria field or you can copy the syntax shown below.
+
+Learn more about Workspace Saved Searches.
+
+Learn more about Saved Searches.
+
+Customize workspace -  used to change the Workspace name, description, or logo, and to organize the layout of the workspace.
+
+Delete Workspace – Delete the Workspace if needed. "A" rights are required. Remember, when working with documents on a workspace, remember to use the right click menu.
+
+Delete all results -  Delete all documents in the results page for which you have rights to delete. For Administrators, this option deletes up to 10,000 in a result. (IMPORTANT: Using this option will purge (i.e., permanently delete) all documents deleted using this function. Documents that are purged cannot be recovered from your deleted items container. In addition, deleting items in this way will exclude both folders and CollabSpaces from the deletion process. Edit profiles - Edit the profiles of all the documents in the search results up to 10,000 items
+
+Document Report - Generate a report listing this workspace's folders and the documents filed in them.
+
+Edit profile/tags – Change the Profile values for the Workspace itself. Profile values such as Client and Matter will be applied.
+
+Email Workspace link - Send someone a link directly to the Workspace. The person receiving the link must have at least V rights to view it.
+
+Modify Access - Change the rights to the Workspace. A workspace's access list is set by default to be the Cabinet Membership list (Cabinet Default list) plus any profile-based security.
+
+Refresh – If you have A rights to a workspace, you have the option to Refresh the workspace which can be done after the template has changed.  This will update the workspace to show any changes made to workspace template setup in the Cabinet Administration page.  Any folders which have been manually added since the workspace was created will be preserved.  If you have set in the Cabinet Administration page to base filters on a specific custom profile, such as Document Type, then when the workspace is restored, filters will be created for existing documents based on those document types and the existing documents will be organized into those filters.  We recommend that you use this option instead of the delete option if the workspace is to be used again.  Using the Refresh option will retain any links users have placed on their home pages.
+
+Access Rights for a Workspace
+Accessing the External View option
+
+If you have defined an External Group with rights to a Workspace, those rights are not defaulted to folders or Saved Searches or documents created in that workspace. If you want to share a folder with an external group, that group needs to be added manually to the Folder.
+
+See our Knowledgebase for more information about giving access to External Users.
+
+External Users and Groups added by the Cabinet Administrator
+
+If the Cabinet Administrator has been given the right to create External Users, the Cabinet Administrator can create external groups and users on the Cabinet Administration page. They can also select existing External groups which have been created by the Repository Administrator.
+
+Go to the Cabinet Security section and if the Repository Administrator has already created the groups, select the group(s) you want to share and give them “No Default Access”. If the Cabinet Administrator is allowed to create external users, the Administrator can click the link that says “Create Group” and add new external users to that group. The group will show up on the right side and MUST be given “No Default Access” as the rights. The group name will show an asterisk after the group name.
+
+Define External Users Access to a specific Workspace
+
+Now that the external users and groups have been created, open the workspace you want to share with an external user or group. Select the Modify Access option under the workspace menu. Use the search field ad the top of the dialog to add the external user or group. Give the user or group the appropriate access rights (View (V) rights, for example) to the workspace.
+
+Next give the external group access to a new folder which you will share with the External group.  We suggest it be named something like Client Collaboration or Client Portal.  When you profile the folder, remember that documents added to that folder inherit the profile values, so you may not want to complete any profiles that are not appropriate such as Author, if documents will be added by multiple users. You can add any documents to these folders that you want the External users to view. You can also create any subfolders you want under this folder to organize the documents you are sharing.
+
+
+CollabSpaces
+For information on sharing documents with clients using our CollabSpace feature, click here.

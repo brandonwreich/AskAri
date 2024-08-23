@@ -1,0 +1,147 @@
+Microsoft Office 365 for NetDocuments
+Nov 1, 2023•Knowledge
+Content
+With Microsoft Office 365 for NetDocuments, you can create or open Word, Excel, or PowerPoint files and store them in NetDocuments.
+
+When you want to edit them, use Office Online web apps, or the Office mobile apps, and save them directly back to NetDocuments. NetDocuments is an official cloud storage provider for Microsoft.
+
+Requirements
+Microsoft Office 365 for business is a subscription method for many of Microsoft's products and services. It is required for this integration. Learn more about Office 365.
+
+Use this integration with any supported browser, such as Chrome, Firefox, or Safari on either Windows or Mac operating systems. Ensure to turn off the browser's pop-up blocker and always allow pop-ups for vault.netvoyage.com,  eu.netdocuments.com (EU Service), au.netdocuments.com (Australia Service), de.netdocuments.com (Germany Service), can.netdocuments.com (Canada Service).
+
+NOTE: By default, this feature is enabled for each cabinet. If your firm wishes to disable the online editor, you can do so from the Cabinet Administration page. At the bottom, you will see an option to "Allow online editor." Un-check this option to disable the feature.
+
+To use the Online Editor in Edge legacy, users need to add the following two Microsoft URLs to their Trusted Sites list (go to Tools > Internet Options > Security > Trusted Sites > Sites):
+
+https://*.officeapps.live.com
+https://office.live.com
+The Online Editor may also be used in Chrome, Edge, Firefox, or Safari. The Trusted Site URLs are only required for Edge legacy.
+
+How do I create or edit Office files from the NetDocuments web interface?
+Editing an Existing Document
+
+Using the right-click menu, users will see Open in > Microsoft Word Online. This will open a new tab or window and prompt the user to login to their Office 365 for Business account. The document will then load automatically for editing.
+
+Right-click on an Office document (Word, Excel or PowerPoint) stored in NetDocuments.
+Select Open > Microsoft [Word] Online.
+The document will be opened in the Office Online app directly and be checked out in NetDocuments. The document will open in a separate browser tab.
+A Microsoft login is required when opening the Office apps and typically just the first time if you have your authentication credentials saved or you are on your organization’s network that has already associated your login credentials with a Microsoft subscription. You may need to contact your IT administrators for assistance.
+Edits being made are automatically saved. You will notice the “saving” display changed to “saved”. When you are completed, you simply click the Save button and close the browser tab and return to the original NetDocuments interface. The document will be checked in.
+
+Edits are saved automatically in real time as you work on the document. Once you are done editing the document, simply click the Save option to ensure you have all of your changes saved and close the window or tab. The document will be checked in automatically. (The New Version option under the Check-In List does not allow you to save the document as a new version after using the online editor.)
+
+NOTE: When editing an Excel spreadsheet, if you close the window while a cell is still active (the cursor is blinking), then the edits in THAT cell won’t be saved. Before closing a spreadsheet after editing, click into a blank cell to ensure data in all cells is saved.
+
+NOTE: Signed documents cannot be edited using the online editor, but they may be viewed in the Preview pane.
+
+The Document ID will not be inserted or updated when editing a document with the online editor. However, if you subsequently open and save using the local editor (Word) the Document ID will be automatically inserted into the document if you have that setting enabled in ndOffice.
+
+Creating a New Document
+
+In the NetDocuments web interface, select Add > Blank Document.
+Complete the document name.
+Select the document format Microsoft Office Online apps > Word, Excel, or PowerPoint.
+Choose filing location and complete any required profile attributes and then select OK.
+The new document will open in the respective Office app directly and be checked out in NetDocuments. The document will open in a separate browser tab.
+As with editing, a Microsoft login is initially required.
+The editing process is the same as in Step #5 above under "Editing an existing document."
+The next time you open and save the document with the local editor (Word), it will be stamped with the Document ID per your settings in ndOffice.
+
+Co-Editing a Document
+Co-editing allows more than one person to edit a document simultaneously. The changes are made and seen in real-time when more than one person is making edits to the document.
+
+How do I co-edit a document with someone else using Office Online?
+
+The first user who opens the document using Office Online will have it checked out under his or her name.
+The 2nd or additional users (can be more than 2) will need to have access to the document in NetDocuments.
+The 2nd user follows the same steps to edit online by right-clicking on the respective Office document, selecting Open in > then selecting Microsoft [Word] Online.
+The fact that the document is checked out by the initial person doesn’t matter for the subsequent people as long as they have rights to edit.
+While in the online editor, users will be able to see the names of other users who are editing it:
+
+Each user's edits are shown in real time in the document as the edits are made:
+
+NOTE: The user who enters the document last will be shown in "Last Modified By" field.
+
+Click "Save and close" to close the document, or just close the browser tab. The document will then be checked in after all users have exited the document.
+
+This feature is also known by Microsoft as co-authoring—a very useful feature for users on the road or those who need to collaborate and review or edit documents in real-time with staff and others, even those at remote locations.
+
+For example, some potential use cases might be:
+
+An attorney is out of the office, but has access to ND and he/she wants to have the secretary make some changes. The attorney can follow along and also make edits if needed at the same time.
+An attorney is in the courtroom and wants some real-time editing of a document. The assistant who is back at the office, can be making changes which instantly appear in the document for the attorney in the courtroom.
+NOTE: All editors must access the files via the NetDocuments web interface and must have edit rights. Co-editing is not supported with the Office mobile apps - only the Office Online web apps.
+
+How do I create or edit Office files on my mobile device?
+First, you will need the Office apps on your mobile device. To download the Office mobile apps on your Android or iOS device, use the links below:
+
+iOS (iPads and iPhones):
+
+Word
+Excel
+PowerPoint
+ Android devices:
+
+Word
+Excel
+PowerPoint
+Editing an Existing Document
+
+Open an Office file from within the NetDocuments app on your iPhone or iPad.
+Tap the Edit icon at the top.
+If you do not have the Office app on your device, you will need to do the following steps one time.
+First, you will be prompted to install the respective Office app (Word, Excel or PowerPoint), and be taken directly to the App Store.
+Next, sign in to the Office app with your Microsoft subscription (an Office365 business license).
+Finally, in the Office app go to Open > Add a Place, then select NetDocuments from the list and pick your location (US, EU or AU).  Then login using your NetDocuments credentials (or the Federated ID account you use to access NetDocuments).
+After these steps are complete you may have to go back to the NetDocuments mobile app and tap the Edit icon again for the document.
+Your document will open in the respective Office app, and you’ll be ready to start editing.
+Your document will be checked out in NetDocuments.
+When finished with your edits, tap the back arrow to save. You’ll be returned to your NetDocuments to see the updated document and it will be checked in.
+
+Creating a New Document
+
+While in the NetDocuments app on your iPhone or iPad, go to a filing location such as a folder, select the three dots Option menu, then tap Create New File.
+Select the Office app for the document format (Word, Excel or PowerPoint) you wish to create.
+Your document will open in the respective Office app, will check out, and you’ll be ready to start editing.
+When finished with your edits, tap the back arrow to save. You’ll be returned to your NetDocuments to see the updated document and it will be checked in.
+FAQs
+
+How do I add NetDocuments as a storage service or unlink another service from the Office Mobile apps?
+
+Open the Office mobile app
+
+Tap the upper left where your initial or sign in picture is located.
+
+Select Edit
+
+Remove the place. You can only remove connected services other than Microsoft’s, e.g., Dropbox or Box.
+
+What editions of Office 365 do I need?
+
+An Office 365 for Business subscription is required to use the online editor to edit Office files that are stored in NetDocuments. Please refer to Microsoft for their Office 365 for Business accounts.
+
+Do I need to sign in with a Microsoft login in order to edit Office files?
+
+A Microsoft login is required when opening the Office apps and typically just the first time if you have your authentication credentials saved or you are on your organization’s network that has already associated your login credentials with a Microsoft subscription. You may need to contact your IT administrators for assistance.
+
+What are the supported Microsoft Office file formats?
+
+Office Online supports editing for .docx, xlsx, and pptx files only. Any Office 97-2003 files (doc, xls or ppt) cannot be edited with Office Online.
+Are there any file size limits when editing documents with Office Online?
+
+We use Microsoft CSPP limits. For the most up to date information, see Microsoft's documentation here.
+
+Are the documents stored on Microsoft servers while they are being edited?
+
+There are two classes of customer data that flow through Office Online servers: user metadata and customer document content. User metadata consists of URLs, email addresses, user ID’s, etc. This data lives in memory and travels back and forth between Office Online and NetDocuments through HTTPS. Office Online goes to great lengths to scrub all personally identifying information (PII) from its logs.  This scrubbing process is regularly audited to ensure Office Online is compliant with several different privacy standards such as FedRamp in the USA.
+
+In the case of customer content, Office Online retrieves it from NetDocuments in order to render it for viewing or editing. The information on disk is encrypted, and customer content only lives on Office Online servers during a user editing session and users can reasonably expect that their content will no longer live anywhere on Office Online servers once the content has been saved to back to NetDocuments when the editing session has been closed. The exception to this is caching.
+
+In order to optimize view performance for PowerPoint Online and Word Online, Office Online stores rendered documents in a local disk cache. This way, if more than one person wants to view a document, Office Online only has to fetch it and render it once. Documents in the cache are indexed using the Document ID and a time stamp. No user information is used to index the file. On every request for a file, if NetDocuments validates the access token, Office Online uses the Document ID returned by NetDocuments to check for the file in the document cache. Because the hash is generated using information unique to the file and not based on any sort of user data, Office Online cannot retrieve information that is specific to a given user. Office Online specifically does not log the cache key when the file is cached so that it is effectively impossible for Office Online to retrieve information associated with a specific host or user without the participation of the host.
+
+Documents live in the cache until they become unpopular. That is, the cache is not time-based but rather is based on available space and usage. Unpopular files may expire out of the cache in only a few days while popular documents may remain in the cache for up to 30 days.
+
+What is Office 365 and how is it different from Microsoft Office?
+
+Please go to the Microsoft Office 365 site to learn more:  https://products.office.com/en-us/business/microsoft-office-365-frequently-asked-questions

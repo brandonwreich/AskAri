@@ -1,0 +1,119 @@
+To Perform an Advanced Search:
+Click the Advanced Search button at the top of the page.
+image.png
+The Advanced Search page defaults to the most recent container (workspace, filter, etc.) as the scope.
+
+
+To clear any previous search criteria, use the Clear fields link at the top (1). Or, use CTRL-SHFT – C as a keyboard shortcut to clear the previous search criteria.
+A user's most recent search will be available from the Recent Searches list under the Simple Search bar.
+Select a page layout (2). This determines the defined display format that will be used on the search results page. The search fields also change to display only relevant fields. For example, selecting Documents will display the Name field, whereas the Email layout will display Subject.
+Select the scope of the search by selecting one or more cabinets (3). Use Ctrl + Click to select more than one cabinet. For faster search times, limit your search to one cabinet at a time. Searching multiple cabinets at a time may result in slower searches.
+The fields on the advanced search page can also be customized (4). See below for more information.
+adv.png
+
+To narrow your search to the specific folder, select the checkbox with the folder's name, e.g. Final versions (5).
+Select the Search subfolders check box to include the subfolders into search results (6).
+Note: By default, NetDocuments' search engine will search up to 20 subfolders in a root-folder. If your folder tree has more than 20 subfolders, an administrator may select the option Enable Subfolder Search which is located in the parent folder options. This will allow for searching beyond 20 subfolders in that particular folder tree.
+image.png
+After this option is selected, searching beyond 20 subfolders is not immediate. The folder tree needs to be processed through a queue to enable deep folder searching. The amount of time this will take varies based on the size of the folder tree. In the majority of cases, a few hours is needed to complete processing. Once processing is complete, searching beyond 20 subfolders in that folder tree will be possible.
+
+Click Show More Options to display more fields. You can collapse it by clicking Hide More Options (7).
+You can choose the sort order of the search results by selecting Relevance, Last Modified Date, or Name. You can also change the sort order after the search results are displayed.
+hide.png
+
+Type the search criteria for the desired fields then click Search to perform your search.
+Customizing the Advanced Search page
+You can drag and drop the fields into whatever order you wish. Select a layout for each of the page layout options - Documents, Email, and All. The field at the top will be the active cursor field, meaning the cursor will default to that field.
+
+
+
+Search Fields
+Attribute (Profile) Lookup
+You can search for clients or matters by the key (number) or description (name). Type-ahead suggestions will be displayed:
+
+
+
+You can also click on the lookup box for an attribute to search it, such as Client, as shown below, then you will see the next dialog. Using Tab on your keyboard, you can move to the next available field on the Advanced Search page. This will skip over the lookup dialog, but you can use F2 to open the dialog.
+
+image.png
+
+When you first come into the dialog, it displays ONLY the values that you have recently used creating new profiles.  So to see the complete list from the beginning, you can click the All tab or you can enter a value and search.  This will then display the first 500 records.  You can enter a value in the box at the top of the dialog to locate other values.
+
+image.png
+
+If you are using a Code and a Description (which we recommend), then you can select the specific radio button you want to use for locating the value. For instance, if you select Description and enter a C in the box at the top, you will find those values that start with the letter C.  If you select Key, then you will be able to search for the matter number. You can set either key or description to be your default.
+
+NOTE: The { } brackets around a custom profile value indicate an exact search.
+
+
+Created By and Modified By fields
+Clicking the "Me" link in the Created By and Last Modified By fields will insert the current user's account name (defined under Settings > Personal Information). Note, if the account name changed, this option will only search those documents that match the current account name. For example, if a user named Michael uploads a document it will be stamped with "Created By Michael." If Michael changes his account name to Mike and clicks the "Me" link, it will insert "Mike" into the search box. So, the search will not find his earlier document because it has "Michael" associated with it.
+
+Creation dates are indexed based on US Eastern Time Zone (New York City).
+
+
+Document ID
+You can search for multiple Document IDs to return more than one result. NetDocuments allows entry of multiple document numbers separated by spaces, commas, semicolons, “OR”, or any other separator. If you use the Document ID as the search criteria, any other search fields you've entered are void since only one document can be returned with that ID.
+
+
+Incomplete Profiles
+By checking the “Incomplete profile” checkbox, users can find those documents that have at least one empty profile field that is set to “prompt if empty”. For example, if any documents do not have an assigned Document Type, and the Document Type attribute is a field that users are prompted to complete, then those documents will appear in the search.
+
+
+File Extension
+You can search for documents by file extension (docx, xlsx, etc.) including NetDocuments Items such as folders and Saved Searches.
+
+On the Advanced Search page, select one or more options in the File Extension field:
+
+filetype
+
+Documents Only will search all file types, except emails, Saved Searches, and folders.
+
+Email Only will narrow the search criteria to include only msg and eml file types.
+
+Folders Only will return only NetDocuments Folders (ndfld file extension).
+
+Under Other... are commonly used file extensions. Select one or more application file extensions.
+
+You can enter an Application file extension from the sample list below, or any other valid file extension to refine your search based on a file extension. Your result will contain only documents for the extension selected. You can search for multiple file extensions all at once.
+
+Below are examples of items or file types you can search by file extension.  Although hundreds of file types exist, for illustration purposes only a few are listed as common application file extensions.
+
+Common Application File Extensions
+
+Application	Extension
+Saved Search	ndsq
+Folder	ndfld
+Word Document (97-2003)	doc
+Word Document (2007+)	docx
+Excel Document (97-2003)	xls
+Excel Document (2007+)	xlsx
+PowerPoint (97-2003)	ppt
+PowerPoint (2007+)	pptx
+Microsoft Outlook Message	msg
+Email Message	eml
+WordPerfect Document	wpd
+Web link	url
+Text Document	txt
+Rich Text Format	rtf
+Adobe Acrobat or Reader	pdf
+JPEG Interchange Format	jpg, jpeg
+Tagged Image File Format	tiff, tiff
+Graphics File	bmp
+Wave Audio File	wav
+WinZip File	zip
+Audio Visual File	avi
+
+
+Sorting
+The Advanced Search provides an option at the bottom of the search page to sort the search results. The sort default is set to sort by Modified date. You can change it to sort by Relevance, by Name, or a personalized sort by checking the box below the sort options.
+
+sort_order
+
+Sort by Relevance is only available when using the Everything/full-text search field. It will sort items higher based on the keywords and the number of times they appear in a document. The documents that match the most criteria will be sorted toward the top.
+
+Modified/Sent Date will sort recently modified items to the top of the list.
+
+Name/Subject will sort items alphabetically by name.
+
+A Personalized sort will sort items higher where the current user appears in the Created By and Modified By fields.

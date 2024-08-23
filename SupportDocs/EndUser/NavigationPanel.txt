@@ -1,0 +1,259 @@
+NetDocuments Overview and Navigation
+
+Content
+User Topics
+
+Starting with NetDocuments
+Interface Overview
+NetDocuments Power Bar Options
+NetDocuments Administration
+NetDocuments is an online document repository where you can store, access, and share your documents. Using NetDocuments, access any document within NetDocuments anywhere in the world as long as you have a connection to the Internet and a web browser. Mobile applications for use with NetDocuments are also available from both the Google Play Store and the Apple App Store.
+
+Before using NetDocuments, we recommend a user's workstation is set up with all the correct NetDocuments applications and settings to ensure their NetDocuments experience is seamless. Read our Setting Up a New User Workstation article for more information.
+
+NOTE: NetDocuments takes measures to ensure our products are generally compatible with popular screen readers such as Microsoft’s Narrator, JAWS, and NVDA.
+
+Starting with NetDocuments
+Go to www.netdocuments.com and select the Sign-in button.
+
+In the drop-down menu, select your NetDocuments host service.
+
+
+Customize the Home Page
+Go to the Home page and select the Customize Layout button in the upper-right corner of your screen.
+
+Select Create a Personal Section, enter the new section heading, and select OK. When you created the needed sections, select the Save Changes button. After you create a section in this window, you can drag them to rearrange the order and positioning on your homepage.
+
+NetDocuments Interface Overview
+NetDocuments Home Page
+The Navigation Pane
+NetDocuments Structure
+NetDocuments Power Bar Options
+NetDocuments Home Page
+The NetDocuments Home Page is the page you normally start with when you log into NetDocuments.
+
+Select the menu button and the Navigation pane pops out as an overlay, so your content isn’t narrowed to make room for it. A pin icon keeps the Navigation pane displayed.
+Hover over Documents to have one-click access to either your Recent or Favorite documents.
+Hover over Matters to have one-click access to either your Recent or Favorite Matters pages.
+Select the ellipse button to get to Advanced Search options.
+Quick Search is at the top of the page for fast access to find your important documents.
+Whether creating a new document or uploading documents into NetDocuments, select the Add button.
+Go to User Profile drop-down menu to update your account and workstation settings, view online Help, and log out when finished with your session.
+Select Go to a matter and start typing a client or matter number — the type-ahead functionality does the rest.
+Select Customize Layout to organize your content.
+Drag items right where you want them.
+Starred workspaces appear in Favorite Workspaces.
+Starred items appear in Favorite Items.
+
+
+The Navigation Pane
+The Navigation pane on the left is used to access cabinets, workspaces, and folders:
+
+To navigate to a workspace, select the arrow next to any cabinet in the list where you can see both recent and favorite workspaces:
+
+Then, select your desired workspace to display the contents.
+
+My Email
+Under a workspace that you are viewing in the navigation panel, you will see an option called My Email:
+This option is a quick way to view emails in the selected workspace which were imported, sent, or received (such as To: or Cc:) by the logged-in user. This is useful in capturing emails that were imported by someone else (e.g., a legal assistant) or which were imported by the signed-in user but sent to someone else (e.g., if I’m the legal assistant).
+Using this option is the same as running the following search criteria in the advanced search:
+"Q":"(=17( %CU% ) OR =18( %CU% ) OR =19( %CU% )) OR (=6( %CU% ) AND =11(msg OR eml) )
+
+Field 17 is: Email To
+Field 18 is: Email Cc
+Field 19 is: Email From
+Field 6 is: Imported By
+
+The My Email option is available for convenience so that users do not have to run a search every time they wish to see emails that fit the above criteria.
+
+NetDocuments Structure
+NetDocuments is a content or document management system (DMS) that organizes your various files and objects on the NetDocuments Platform. Some terms to understand include:
+
+Repository - It represents your organization’s account. User accounts are added to the repository level, such as employees. Organizations can have multiple repositories.
+Cabinet - The container that houses folders and workspaces. User access is usually granted on the cabinet level.
+Workspace - A view that displays a client’s documents. It is organized into sections called folders, saved searches, or filters. You often file items in the cabinet but do NOT file them in any folder. They appear in the workspace instead.
+Folders and Subfolders - A container that houses your documents. Folders can have subfolders.
+CollabSpace - A container that behaves similar to a workspace, used to share documents with your clients and other external parties. When CollabSpaces are enabled, external users cannot be added to any location other than a CollabSpace.
+Document - A Word, Excel, or PDF document. Documents can have multiple versions, with one version designated as Official.
+Official Version and other versions - One document can have multiple versions; Of those versions, one is designated as the Official version or the document that is the one to use, such as the latest version.
+NetDocuments Power Bar Options
+Within NetDocuments, task options appear for how to act upon documents, folders, and the various options within NetDocuments.
+
+Within a repository and cabinet, select a document in NetDocuments for a number of options to appear. From the Power Bar that appears, select More to access all of the available options:
+
+All information - View document details.
+Approve – Electronically approve the contents of a document. Any changes made afterward eliminate the approval.
+Auto-version - Automatically create a new version when another user edits the document.
+Check in – Manually check in a document.
+Check in as new version – Check in a document as a new version.
+Check out – Manually check out a document, then another user cannot edit it.
+Check out as new version - Check out a document as a new version.
+Delete – Delete a document. You must have Administer rights to a document in order to delete it.
+Deliver a secured link  - Provide direct access URL for one or more documents. When sharing, you are able to set an optional password, lock the version you share, grant or restrict the ability to download the document, and set an automatic expiration date for the URL to expire.
+Download – Download a copy of the selected document(s) to your local PC.
+Edit profile - Edit existing values in profile fields.
+Email copy – Email a copy of the document to other users outside of your cabinet.
+Email link – Email a link of the document to other users of the NetDocuments cabinet so they can access it.
+Follow – Get a notification every time another user changes the content of a document.
+Go to workspace - Transfer to the workspace assigned to a document.
+History – See who accessed or modified a document or folder.
+Link documents – Connect two or more documents with each other by placing a link in the profile. (Must select at least two documents for the option to become clickable)
+Lock version - Lock the official document version to protect it from editing.
+Modify access – Modify access if you have share rights.  This option restricts access to specific documents or folders.
+Move/Copy – Move or copy the document into a different folder.
+Open – Open the document. Generally used to open multiple documents.
+Open as read only - Download the document for viewing.
+Print – Print one or more documents to your default printer without opening the document in the application.
+Print cover sheet - Print out information about the document and the barcode. Cabinet Administrators can add additional information to the document cover sheet.
+Rename – Rename a document.
+Review – Review the content of multiple documents in a folder.
+Send to application – Launch the 3rd party software for document comparison.
+Send to DocuSign – Using our DocuSign integration, send a document to DocuSign from NetDocuments.
+Share externally – Share a document using a CollabSpace.
+Sign document - Digitally sign a document. After signing you are not able to edit or delete a document.
+Unfile - Unfile the document from the folder.
+Unlock - Unlock a locked document.
+Upload new version - Import existing document as a new version.
+View in the browser – View the content of the document in a quick browser view. Used also when the application is not available.
+Versions - View all existing document versions.
+
+
+Possible Tasks on Documents, Folders, and Email
+Starting NetDocuments
+Customize the Home Page
+Download Documents from NetDocuments
+Check Out/In Documents
+Upload Documents via the NetDocuments Website
+Move/Copy Documents
+Create Blank Documents
+View Document Details
+Add a Top-level Folder
+Print from NetDocuments
+Email Copy
+Email Link to a Documents
+Deliver Secure Links
+ndOffice Handoff
+Levels of Access
+Add a Top-level Folder
+Upload Documents to NetDocuments
+Move/Copy Documents
+Create Blank Documents
+View Document Details
+Add a Top-level Folder
+Download Documents from NetDocuments
+Select the check box next to the document name.
+Go to the More menu on the right side of the screen and select Download.
+The document is downloaded to your machine's default download location
+Check Out/In Documents
+Ensure ndOffice is downloaded, installed and running.
+Select the document name which will trigger the document to check out and open automatically.
+View the document or make changes.
+Save and close the document to check to document back in. If any changes were
+Upload Documents via the NetDocuments Website
+Use the +Add button at the top of any page in the NetDocuments Service.
+Move/Copy Documents
+Below File in this Folder, select Move option button or Copy option button.
+Move - Remove the document from your PC after uploading.
+Copy - Keep the document copy on your PC after uploading.
+Create Blank Documents
+Near the search box, select the +Add button, and then Blank document. A page appears, where you can define the details of the created document.
+In the Document format drop-down, select any format for your newly-created blank document.
+Enter the document name, select a location, and then click OK.
+Print from NetDocuments
+Select the checkbox next to the document name.
+Go to More, and then select Print.
+Enter the number of copies you need to print in the Copies box, and then click OK.
+Now, the default printing device prints out the document.
+
+Email Copy
+To enable this option:
+
+Go to the drop-down menu in the upper-right corner and select Settings out of the list.
+Select Application Settings.
+Select the Turn on Desktop Email Integration check box and click OK.
+Refresh the page.
+To Email Copy
+To email a copy, select the checkbox next to the document name, and then click Email copy.
+Outlook opens. A new email with the attached document appears. The document name is indicated in the email subject. Now, you can send the email.
+Email Link to a Document
+To enable this option:
+
+Go to the drop-down menu in the upper-right corner and select Settings out of the list.
+Select Application Settings.
+Select the Turn on Desktop Email Integration check box and click OK.
+Refresh the page.
+To email a link:
+
+Select the checkbox near the document name, and then click Email link.
+Your default email program opens. A new email with the inserted link to the document appears. The document name is indicated in the email subject. Now, you can send the email.
+Deliver Secure Links
+Deliver a secured link  - Provide direct access URL for one or more documents. When sharing, you are able to:
+
+Set an optional password
+Lock the version you share
+Grant or restrict the ability to download the document
+Set an automatic expiration date for the URL to expire
+Go to More, and then select Deliver a secured link.
+In the To: box, enter the email of one or several recipients.
+Select Send link through email, and then your default email program opens. A new email with the inserted link appears. Email of a recipient and the email subject are already indicated.
+
+Automatic ndOffice Handoff
+With ndOffice installed, open an Office document (such as .docx or .xlsx) from a browser, NetDocuments hands off the document to ndOffice to open it.
+When you save and close it, ndOffice checks the document in both in ndOffice and NetDocuments.
+View Document Details
+To access detailed information about a document, view it in the Details Pane:
+
+Select the checkbox next to the document name.
+Go to Details on the Document Details Panel that appears on the right:
+         details.jpg
+
+The Details Pane has 5 sections: Profile Details, Attachments, Versions, Linked Documents, and Locations.
+
+Profile Details:
+        profile.jpg
+
+This is basic information about the document such as who created/modified it and when, what type of document it is, the client/matter details, document and version numbers etc.
+Attachments:
+attachments.jpg
+
+If you view an e-mail in the Details Pane, all the attachments appear here. Each one is a link, select it to access the attachment.
+Versions:
+versionss.jpg
+
+All versions of the selected document appear here. Select any version in the list to open it. To perform any other action, such as adding or deleting a version, marking a version as official etc., select the Options button on the right of this section to open the Versions window.
+Linked Documents:
+If two or more documents are relevant to each other, you can link them. Any linked documents appear here.
+Locations:
+locations.jpg
+This is information on the location/s of the selected document:
+
+URL and Email – select any of these links to copy the location link to the clipboard (select Yes if a prompt appears asking if you allow the Clipboard access).
+
+Cabinet and Workspace – select the name of the cabinet or workspace to open and view it.
+
+Levels of Access
+There are five types of access in NetDocuments:
+
+View
+Edit
+Share
+Administer
+No Access
+Note: When No Access is applied to a user or group, the document is completely invisible to that user or group.
+
+
+
+NetDocuments Administration
+NetDocuments requires that at least one user acts as the
+
+NetDocuments Repository Administrator.  This administrator has the right to modify the repository name, upload a default logo, add or remove users, and define user groups. The repository has at least one cabinet with documents.
+NetDocuments Cabinet Administrator. This administrator defines who has access to the cabinet from the list of groups set up by the repository administrator. The cabinet administrator is also able to create any shared top-level folders with shared access.
+Add a Top-level Folder
+Folders appear in the Navigation pane displayed on the left.
+Cabinet Administrators create shared top-level folders for all users or they are able to allow users to create shared top-level folders. To create a top-level folder:
+Select the cabinet name at the top of the Navigation pane.
+Go to Cabinet Options and select Add Folder.
+
+As a user, if you need any of these tasks completed, you must find either the repository administrator or the cabinet administrator to meet your needs.
+
+If you need to administer NetDocuments, see How to Administer NetDocuments.

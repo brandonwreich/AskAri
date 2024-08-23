@@ -1,0 +1,256 @@
+Users and Groups
+
+Content
+The Users and Groups page has 3 tabs. The Users tab allows Repository Administrators to add Internal or External Users as members of the Repository and to assign these users to User Groups. The Groups tab is used to define users' access to documents, workspaces, folders, etc. in a cabinet. The Service Accounts tab allows creating service accounts needed for authenticating third-party applications.
+
+To access the Users and Groups page:
+
+1. In the upper-right corner, select your name > Admin. If you have more than one repository, select the name of the repository, in which you want to manage users and groups.
+2. In the Navigation Pane, select Users and Groups.
+
+To reverse the order, on the top of the Users list, select an arrow next to the User name.
+
+To find a user, enter a user name in the search box.
+
+In the drop-down box, you can filter the list by External, Internal, or All Users.
+The Show inactive check box includes inactive users in the list.
+
+To add a new user:
+1. Select Add User.
+2. Enter the new user's email address.
+3. Select OK.
+
+If the person is a currently registered NetDocuments user, you will receive a message that this user already exists, and you can add them to your repository.
+
+If they have not been registered previously, the Create User Account window appears.
+
+- Enter First, Middle (optional), and Last Name.
+- The username will default to the user's email address. We recommend using this default setting.
+You can optionally enter a phone number or an organization name.
+Make sure you set them as either Internal or External. See Internal Members vs. External Members
+In Repository admin. type:
+Select Full to provide full administration rights
+Select Membership only to provide member administration rights
+Select Non to provide user rights
+For more information, see Repository Administrators.
+
+Toggle Non-Interactive Service Account to use this account for service authentication. The example of service authentication is a connection to an external third-party product via API if it cannot interactively login via the Web Interface or other user interaction driven UIs. Use the Service Accounts tab to map the Non-Interactive Service Accounts to different applications. Important: A service account user should not be used in more than one repository. If an organization has multiple repositories, individual service accounts should be designated for those repositories.
+Toggle Send welcome email to send the new user an email notification with the username and a link so they can create their password. If you disable this option, the welcome message can be sent later. Learn how to Re-send the Welcome Email.
+The Groups tab shows the list of membership groups for the created user.
+To add a new user to a group(s):
+In the Create User Account window, go to the Groups tab.
+
+Select the Add group button.
+
+The existing groups appear in the list. You can start entering the needed Group name in a search box to find it faster.
+
+Select the check boxes next to group names, and then select Add Groups at the bottom. To filter the list and view the groups you have selected, at the top of the list, click the View selected option.
+
+Select Save to save changes. The user now appears in the Users list.
+
+Modify a User
+To change the user type, in the Users list, select a check box next to a user name (you can select several users at a time), and then in the upper-right corner, select Set as Internal or Set as External and confirm your action.
+
+Select a user from the list to view and/or change their information.
+To make changes, select Edit:
+
+On the Details tab, you can change user information.
+On the Groups tab, you can add a user to groups or remove a user from group membership.
+Change a User's Password
+Note: You cannot force a new password on another user. Passwords are not sent through an email.
+
+To change a user's password, select Need login assistance? on the login page and enter the person's email address or their Username. The person will be sent an email with a link to reset their password.
+
+Make a User Inactive
+Marking a user account as inactive means the user will not be able to access this repository. This action does not remove the user from the NetDocuments system and does not free up a license for another user.
+
+You can set a user's account as inactive in cases of parental leave, long-term disability, security investigations, or others. All the user's information remains in the system as well as links to all documents.
+
+To set a user's account as inactive:
+
+On the Users tab, double-click the user to open the Details pane.
+Select Edit.
+At the bottom of the pane, toggle Inactivate user.
+Select Save to confirm the action.
+
+Reactivate a User Account
+If a user's account has been set to inactive, it will appear in the Users tab and searches, but the status is noted in brackets next to the user's name:
+
+Selecting the user's name will open the Details pane and the user will be marked as inactive. To reactivate the user's account, switch off the Inactive user option.
+
+Remove a User
+In the Users list, select a check box next to a user name (you can select several users at a time).
+In the upper-right corner, select Delete.
+Confirm your action.
+After you remove users, they no longer have any access to the Repository and its documents.
+
+Bulk Users Upload
+The Bulk Users Upload option allows administrators to add a large number of users to their NetDocuments repository via a .csv file. To use this feature, a.csv file must be created that contains certain information about each user that will be added. The following column headers can be used when creating the file to be uploaded:
+
+*Email – Enter the user’s email in this column
+
+*FirstName - Enter the user’s first name in this column
+
+ MiddleName - Enter the user’s middle initial in this column
+
+*LastName - Enter the user’s last name in this column
+
+*UserType – Enter one of the following: Internal, External
+
+*UserAdminType - Enter one of the following: Full, Membership Only, Non-Admin
+
+ Groups – The group GUID must be entered rather than the group name. Separate multiple group GUIDs by semicolon. The group GUID can be found by navigating to the group in the NetDocuments admin console under Users and Groups>Select group from the Group name column>The Group GUID will be displayed in menu
+
+*SendWelcomemail – Enter one of the following: True, False
+
+Fields that are required are marked with an asterisk.
+
+Below is an example of a .csv file formatted for uploading users in bulk:
+
+Click here to download a sample file.
+
+Once the .csv file has been created and saved, navigate to the Users and Groups page in the NetDocuments Admin Console. There will be a Bulk Users Upload option near the top right.
+
+On the Users tab, click Bulk Users Upload
+In the open dialog that appears, navigate to the .csv file you created
+Click Open
+A message will appear indicating the .csv file has been queued for processing
+NOTE: If you are uploading a large number of users, processing may take some time.
+
+When processing is complete, an email will be sent to the email address of the user who initiated the bulk upload. The email will note if the operation has been successful or not. If the upload fails, ensure the column headers are exactly the same as in this article and that the file is a .csv format.
+
+NOTE: If the email address being used for a user account already has a NetDocuments account (for example, the email address was previously used with a NetDocuments account in another repository) the user cannot be added using this method. In those cases, please add the user manually.
+
+Create User Report
+Select Create Report to view or print a list of all users in a repository.
+
+You can customize the report using the following options:
+
+Include details – Select this check box to create a detailed report including First Name, Last Name, email address, UserGUID, Registered Date, Last Login Date, and Federated identity enabling information.
+If this check box is clear, the report will only include the number of user logging actions during a set period of time.
+
+Output format – You can choose a formatted table, a JSON, or an XML file.
+Sort by – You can sort users alphabetically by name, by email domain, or by the last login time.
+Include login aging summary – Select this check box to include general statistics of the user logging time.
+Include authentication parameters – Select this check box to add authentication parameters to the report, such as minimum password length, session inactivity timeout, and account lockout.
+Then, select OK, and your report starts generating.
+
+The report is divided by Internal and External Members, shows the login activity for each user, and summarizes all users at the bottom of the report.
+
+Users and Groups - Repository Settings Menu
+To navigate to the repository settings menu for Users and groups, select the cog icon in the top right corner of any Users and Groups page in the Admin console. Two settings will display:
+
+Create External Groups
+A Repository Administrator can allow Cabinet Administrators to create External Users and Groups at the Cabinet Administration level by selecting the check box.
+
+Disable the Cabinet
+A Repository Administrator can allow Cabinet Administrators to disable (hide) their cabinet from users by selecting the check box.
+
+This allows a Cabinet Administrator to configure a new cabinet and add users but do not make it visible until it is ready.
+
+Internal Members vs. External Members
+Internal Members are employees of your organization.
+
+External Members are people outside of your organization, with which you share documents over an extended period of time.
+
+Note: You cannot make an administrator the External Member.
+
+When your organization subscribed to NetDocuments, you were provided a certain number of Internal and External User memberships. External members will normally have a reduced feature set. If you increase the number of memberships (user accounts) for your Repository, an invoice will be generated for the new number of memberships or Service Account Users you add. If you add a new Internal user, this new account is automatically added to the Internal Members group of the repository. If you add a new External user, they can be added to any group in the repository that is designated as an external group.
+
+External User Access
+External Users cannot be Repository or Cabinet administrators. External Users with View-only access have limited rights to documents in your repository beyond what View-only access grants to Internal Users. External Users cannot email or copy documents where they have only View (V) rights.
+
+Enable Users for a Cabinet
+When you add a person as a new Internal member to a Repository, they will automatically have access to documents in a cabinet if the Internal Members group has been given rights in that cabinet.
+
+If you are using groups other than the Internal Members group, you will need to first assign the user (member) to one or more User Groups. Then, on a Сabinet Administration page, grant the User Group access to the cabinet by adding to the Cabinet Internal Members list. All users gain access to a cabinet through a defined User Group. You can add as many users to a Repository as needed.
+
+To add users beyond your initial purchase, on the Navigation Pane, select Information and Settings, and enter Max Internal Members and Max External Members number. The amount must be minimum 5% of your current users (either Internal or External). NetDocuments will automatically track that information and bill your account for the additional new user(s). Contact NetDocuments Billing at billing@netdocuments.com if you need to update any other billing information.
+
+Repository Administrator(s)
+Any Internal Member can be defined as an Administrator. There are two types of Repository Administrators:
+
+Member Admin - This type of Admin can only see the Users & Groups page. They can manage the repository's internal and external users and groups. They do not have access to any other repository admin function.
+Full Admin - Generally referred to as a Repository Administrator, they have full access to all repository functions. They may or may not also be cabinet administrators. Also, this type of Admin access is not to be confused with A access on a workspace, folder, or document.
+When NetDocuments creates your Repository, one or more Administrators can be designated. (NetDocuments recommends having at least 2 Repository Administrators). To make any member an Administrator, on the Users tab, select a user, and the User Details dialog box appears. In Repository admin. type, select the Full option.
+
+If at any point, a current user needs to have their Repository admin rights removed, another repository administrator will need to log in to the Admin Console, go to Users and Groups in the navigation menu, select the user's name from the list, click Edit and select the Non-Admin option. Once the user has been set as a non-admin, select Save.
+
+Note: For repositories with many users, you are allowed to create an account that is used solely for administrative purposes. It is permitted per the Terms of Use to use this account by more than one person for Administration purposes. It is not allowed under the Terms of Use to use any other user account by more than one person. You should always change the password when an Administrator leaves the firm or is no longer an Administrator.
+
+It is important to choose Administrators carefully. Even if a user has removed all other Repository users from the access list of a document, the Cabinet Administrator can still access the document. You may want to create an account just to be used for administrative purposes. This will be one of your paid Internal users, but it provides an easier way to manage your system. This Administration type of account is the only exception to allowing more than one person to log in with an account per the Terms of Use Agreement. It is ok if more than one person, for administrative purposes, uses an Administration account to perform administrative functions only.
+
+The Groups Tab
+User Groups simplify the administration of access to cabinets, workspaces, folders, documents, and CollabSpaces. Each user can belong to one or more user groups. A user must be a member of at least one group to be given access to a Cabinet.
+
+The list of groups is sorted alphabetically.
+
+To reverse the order, on the top of the Groups list, select an arrow next to the Group name.
+
+To find a group, enter a group name in the search box.
+
+Note: You must enter the beginning of the group name, not the containing keywords.
+
+The Show hidden groups check box includes hidden groups in the list.
+
+To delete groups, select the group name > Delete, and confirm deletion of the group.
+
+The Internal Users group is created by default. All Internal users are members of this group.
+
+The Internal Users group cannot be deleted or modified. You can choose not to enable that group for a specific cabinet if you wish.
+
+To create a new group:
+On the Groups tab, select Create Group.
+Enter a group name.
+Select Create.
+The Create Group window appears.
+
+Enter a Group name.
+Make sure you set a group as either Internal or External.
+Toggle needed Group options. See Group Options.
+To add users to the group, select the Members tab > Add user. Select the check boxes next to user names, and then select Add Users. To filter the list and view the users you have selected, at the top of the list, click the View selected option.
+Select Save to save changes. The group now appears in the Groups list.
+
+Modify a Group
+Select a group from the list to view or modify a group's option and membership.
+To make changes, select Edit:
+
+On the Details tab, you can change group information.
+On the Members tab, you can add users to the group or remove users from group membership.
+
+Group Options
+Hide group membership
+Toggle this option if you do not want a group's membership to be seen in a document or CollabSpace access list. This will restrict the ability to modify an access list at an individual level, but it can improve security where users should not know that another person is accessing the same document, such as a bid or proposal.
+
+Do not display in user group list
+Toggle this option if you do not want the group to appear in group lists. For example, you wanted to create a Group for each Author that may have an attorney and the secretary in it. You may not want this to show up if your organization is large or if the list is unwieldy. Those who will use that group know that it exists and do not need it to appear in group lists. This prevents users from adding the group to a document, folder, or workspace access list. However, the user group may be added through the API or profile-based security.
+
+Members are allowed to create new cabinets
+Designate a group with users who are delegated the authority to create cabinets. There can only be one group in a Repository with this capability. For any user who belongs to this group, the Create Cabinet button will appear in the Cabinets console. Those users can create a new cabinet and can also copy from another cabinet if they have delegated rights to create that cabinet.
+
+Members are allowed to upload lookup tables
+Delegate to the group the ability to upload a lookup table. This gives members of the group the rights to see the Upload Lookup Table page. They do not see the online lookup table editor.
+
+Members are allowed to manage devices
+Delegate to the group the ability to manage devices that are connected to the repository. Users will see the ndSync Policies and Device Management page. This gives members of the group the rights to view (but not edit) the settings, link/unlink, and remove devices.
+
+User Group Report
+Repository Administrators have the option to generate a report of all User Groups and the users who belong to each group. The report in .xml format will be emailed to the address you enter.
+
+To request a User Group Report, select Create Report and enter your email.
+
+The Service Accounts Tab
+Non-Interactive Service Accounts (Service Account) are a special kind of user account used for authenticating the access of third party applications to the NetDocuments platform. These applications may include those provided by partners, or custom applications you have written yourself.
+
+A Service Account cannot be used for any form of interactive login – you cannot use a Service Account to log into the NetDocuments Web interface or ndOffice for example.
+
+Create a Service Account
+On the Service Accounts tab, select Create Service Account.
+
+Enter an email address for an account that you have already created as described here. This must be an account that you marked using the Service Account toggle.
+Select Create to create an account linked to that email address.
+Note: It is good practice to create a suitable account in your directory services environment specifically for this purpose.
+
+To map the newly created Service Account to an application, you will need to have the ID of a registered application in the correct format. Enter it into the Application ID box:
+
+Select Create Mapping to complete the action of mapping the application to the Service Account and save your changes.

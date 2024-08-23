@@ -1,0 +1,142 @@
+Modifying the Access List of a Document or Folder
+Jan 20, 2022•Knowledge
+Content
+Table of Contents
+Overview
+Modify Access Dialog Actions
+Examples
+Editing Access on a Single Document
+Adding a group or single user to a list of documents
+Removing a group or single user from a list of documents
+Replacing an existing access list with a new one
+Creating and Applying a Security Template
+Modify All Results Access option on the Workspace level
+Changing the Access List of documents in a custom search or Saved Search
+Changing a Folder Access List
+Overview
+Modifying a document's Access List
+
+You can modify an Access List by selecting a single document or multiple documents from a List View page.
+
+Mouse over to the More options menu and select the Modify Access option.
+
+You will see the newly redesigned Modify Access dialog. There are multiple actions a user can take within this new dialog:
+
+Add - Add the selected group(s) or user(s) to the document access list
+Remove - Remove the selected group(s) or user(s) from the documents access list
+Replace - Replace the current access list with a new access list
+Cabinet Selector - Use this to select the cabinet in which to search for groups
+User Types selector - Choose to search from All, Internal, or External users
+Group/User Search - Use this to search for groups or users quickly
+Security Template selector - Select existing templates from here or save new ones
+Edit Multiples - If a user wishes to edit more than one group's access at the same time, this option can be used
+Remove - Use this button to remove users or groups from the access list (When editing the access list of multiple documents, this option only removes users/groups from the list being edited. It does not remove them from the access list.)
+Edit group rights - Use this to edit the rights of a single group in the selected row
+
+If you are modifying the access of a single document, you will see the existing access list for that document. You may see a group with the cabinet icon labeled with Default Access as shown below:
+
+This group contains all groups added by a Cabinet Administrator at the cabinet level, and includes the rights granted to those groups at that level to be used as a default. By clicking on the i Details button, you will see the Groups added to the cabinet by an administrator.
+
+For example, suppose a cabinet administrator added a group to the cabinet, and granted that group VE rights by default, and also a group named Engineering with default rights of VES. By adding Cabinet  Default Access to the access list, all users of the Sales and Engineering groups will be included in the Access List. The access rights of this Default set of Groups cannot be changed by end-users in this dialog.
+
+You will also see a group called Everyone in the options of groups to add to an access list. This group was previously known as Internal Users in this menu. This group is still referred to as Internal Users in other locations.
+
+In this article, we'll cover a few examples of how a user would modify the access of a document or documents to suit their needs.
+
+Examples
+Editing Access on a Single Document
+
+Adding a group or single user to a list of documents
+
+Removing a group or single user from a list of documents
+
+Replacing an existing access list with a new one
+
+Creating and Applying a Security Template
+
+Editing Access on a Single Document
+If access needs to be edited on a single document, users can be added and removed where needed. To edit an access list for a single document, do the following:
+
+Upon initiating the Modify Access dialog as mentioned in the beginning of this article, users will see the existing access list for the document.
+
+To add a user or group to the access list, use the search menu and select the users and groups needed. Clicking the i icon will display a list of all users within that group. Note: Find users and groups faster by selecting to search only internal or external users. You can also type keywords into the search bar to search out specific users or groups.
+
+To remove a user or group from the access list, check the box to the left of the user's name and select Remove.
+
+When the access list has been adjusted as needed, select Apply.
+The user will receive a notification, informing them that the access has been updated.
+
+If the changes fail, the user will receive a notification. Click Learn More to see why it failed.
+
+Adding a group or single user to Multiple documents
+Using the Add option will keep the existing access list as well as add the users and/or groups that are specified when a user adds those to the access list. To add a group or specific users to an access list, do the following:
+
+Ensure Add is selected at the top of the screen (This option will be selected by default when initiating the Modify Access dialog)
+
+Select the users and/or groups that should be added to the access list from the search menu. Clicking the i icon will display a list of all users within that group. Note: Find users and groups faster by selecting to search only internal or external users. You can also type keywords into the search bar to search out specific users or groups.
+
+Upon selecting the users and/or groups that should be added, more options will appear. Selecting the dropdown under the Rights column will allow the user to select the level of access for that user or group. Note: To learn more about what these access rights entail, click here. If multiple groups need the same level of access, the checkbox to the left of the user or group name can be selected to edit the access for all selected groups using the Edit Rights option.
+
+Once the access level has been applied, select Add in the bottom right corner. The user will be asked to confirm the operation in a pop-up. Click Confirm.
+A notification will appear in the right corner of the screen, noting that the access update has begun.
+
+If all of the documents' access lists are successfully updated, the user will receive the following notification in the right corner of the screen, showing that the update has been completed.
+
+If any of the access list changes fail, the user will receive a notification showing how many items failed. The user can select Learn More to see a list of the failed items along with why they failed.
+
+Removing a group or single user from Multiple documents
+Using the Remove option will remove the chosen users and/or groups from the existing access list. To remove a group or specific users from an access list, do the following:
+
+Select Remove from the top of the menu.
+
+Select the users and/or groups that should be removed from the access list. Clicking the information icon will display a list of all users within that group. Note: Find users and groups faster by selecting to search only internal or external users. You can also type keywords into the search bar to search out specific users or groups.
+
+Upon selecting the users and/or groups that should be removed, the users will appear in the list of users/groups to be removed. If a user or group was added to the list in error, select the checkbox to the left of the user/group and click the Remove button located just above the checkboxes.
+
+When the appropriate users have been added to the list, select the Remove button located in the bottom right. The user will be asked to confirm the operation in a pop-up. Click Confirm.
+A notification will appear in the right corner of the screen, noting that the access update has begun.
+
+If all of the documents' access lists are successfully updated, the user will receive the following notification in the right corner of the screen, showing that the update has been completed.
+
+If any of the access list changes fail, the user will receive a notification showing how many items failed. The user can select Learn More to see a list of the failed items along with why they failed.
+
+Replacing an Existing Access List on Multiple Documents With a New One
+Using the Replace option will remove the existing access list and replace it with the new one that has been created. To replace an access list, do the following:
+
+Select Replace from the top of the menu.
+
+Follow steps 2-7 in the Adding a group or single user to a list of documents section as the steps are the same from here.
+Creating and Applying a Security Template
+When a specific set of users and/or groups is used often when modifying access, Security Templates can be used. To create and apply Security Templates, do the following:
+
+From within the Modify Access dialog, create an access list as you would in any of the previously shown examples.
+Once that list has been created, select Security Templates > Save New Template.
+
+The user will be asked to name the template.
+Once the template has been named, select Save.
+After this has been done, the template will be available from the same menu for the user to select the next time it is needed.
+
+Modify All Results Access option on the Workspace level
+There are times when all the documents within a workspace will need to have their access updated. The most common reason for this is when a user is added to a workspace after a workspace has been created and already has documents in it. Since access in NetDocuments is retroactive, adding a user to the workspace Access List alone will only allow the newly added user to see documents added to the workspace after they were added to the workspace.
+
+For a user or group to be able to see all the documents in a workspace from before they were added to the workspace, the access list of all documents within that workspace must modified to include that user or group. To do so, see the steps below.
+
+Navigate to a workspace's List View. This is the view of the workspace that shows all documents within a workspace in a list, rather than sorted by filters or folders. You can switch between List View and Summary View by selecting the column icon at the top of a workspace, located under the Overview tab.
+
+Once in List view, select the name of the workspace at the top of the page to open the workspace options. Select Modify All Results Access.
+
+Select the users and/or groups you wish to add to the documents' Access Lists and specify their access.
+Once the access level has been applied, select Add in the bottom right corner. The user will be asked to confirm the operation in a pop-up. Click Confirm.
+A notification will appear in the right corner of the screen, noting that the access update has begun.
+
+If all of the documents' access lists are successfully updated, the user will receive the following notification in the right corner of the screen, showing that the update has been completed.
+If any of the access list changes fail, the user will receive a notification showing how many items failed. The user can select Learn More to see a list of the failed items along with why they failed.
+Changing the Access List of documents in a custom search or Saved Search
+You can change the access list for all documents matching a search criteria in a custom search or saved search or other List View. NetDocuments will support adding to, subtracting from, or completely replacing the existing access list on those documents.
+
+You can choose Modify Access under Group Options from the Search Results, Recent Documents List, and Saved Searches to add users, modify current access, or remove users. From a Search Results page, you can go to Search Result Options > Modify Access to change up to 10,000 items at a time. This process can take several minutes depending on the number of documents requested.
+
+NOTE: You can also change the Access List of individual documents using this option rather than going to the profile page directly.
+
+Changing a Folder Access List
+If you want to change everything in a folder tree, open the access list for the top folder and select the box that says "Also Change the Access List of Each Item Filed in These Selected Folders." This will change the access list for the folder you have selected, any subfolders in that folder, and any documents in any of the folders. Changing all documents and subfolders under a parent folder does not have a limit on how many items will be changed.

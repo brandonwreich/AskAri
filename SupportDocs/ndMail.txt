@@ -1,0 +1,638 @@
+NetDocuments ndMail is the matter-based intelligent email management application — a game-changer — with full cloud architecture built on the NetDocuments Trusted Cloud Platform integrated within Outlook.
+NetDocuments in combination with ndMail provides key activities for busy law professionals, for filing emails and documents into a unified, matter-based solution.
+
+Product Information and Announcements
+ndMail 1.14 Release Notes
+A Quick Overview Video
+Datasheet
+Whitepaper
+Admin Topics
+
+Troubleshooting
+ndMail Administration (Administration Help and Downloads)
+User Topics
+
+User Requirements, Download, and Setup
+ndMail Interface Overview and Navigation
+How to Use ndMail
+Support and Feedback
+Attention: To use ndMail, it requires that Microsoft Exchange and ndOffice already set up and functioning in your office by an administrator. If you are an administrator, go to the ndMail Administration topic for administrative requirements and best practices in setting up, configuration, and distributing ndMail to each client endpoint.
+
+The following information is intended for end users.
+
+User Requirements, Download, and Setup
+Setup prerequisites:
+
+Microsoft Windows 10 or Microsoft Windows 11 (Only ndMail 1.12+ supports windows 11)
+Microsoft Office Outlook 2016 (32-bit or 64-bit), including Microsoft Office 365 subscriptions
+ndOffice application, version 2.8 and above
+Microsoft Exchange 2013, 2016, Online (Office 365)
+Microsoft .NET Framework 4.8 (included in 2019 and 2020 versions of Windows 10)
+NOTE: NetDocuments takes measures to ensure our products are generally compatible with popular screen readers such as Microsoft’s Narrator, JAWS, and NVDA.
+
+Download for the client:
+
+In most situations, ndMail is downloaded and installed by an administrator. If you need to install it, download the software:
+
+https://apps.netdocuments.com/apps/ndMail/ndMailSetup.exe
+
+Install ndMail on the client:
+
+Before installing, repairing, or uninstalling the ndMail application, you need to close Outlook.
+Ensure the account has administrative rights before installation.
+Obtain the ndMail Install from your administrator.
+Double-click the ndMailSetup.exe, then select Next.
+When the NetDocuments Terms of Use dialog appears, read the license agreement, select that you accept the terms, and select Install.
+In the Completed the NetDocuments ndMail Setup Wizard dialog, select Finish.
+Back to top
+
+ndMail Interface Overview and Navigation
+Table of Contents
+
+Overview
+The ndMail Predictions Panel
+Primary Strategies for Generating ndMail Filing Predictions
+ndMail Settings
+Providing Access to Participants
+Outlook Panels
+Relevancy Rank
+The Cabinet Tabs
+Global Filing Indicator
+Collapse or Expand the ndMail Predictions Panel
+ndMail Folder Mapping
+Pause and Start
+ndMail Monitor List
+More
+Settings
+Notification Settings
+Overview
+NetDocuments is the document and email management in the cloud. With ndMail integrated into Microsoft Outlook, leverage web-scale predictive technologies to file email messages to the correct location seamlessly. For each email, NetDocuments analyzes its content, recipients, attachments, and so on, to predict a set of filing locations where others have previously filed other similar email messages at your organization or on your team. The diagram shows the main ndMail user workflow.
+
+The ndMail User Workflow
+
+ndMail provides an intelligent, firm-wide predictive filing based on key criteria such as To, From, Cc, subject, contents, attachment names, and so on.
+
+Predicted locations are visually ranked, indicating the prediction accuracy to file the email to the best location based on similar emails and documents in your NetDocuments repository.
+
+Back to Top
+
+The ndMail Predictions Panel Overview
+After installing ndMail and launching Microsoft Outlook, the ndMail predictions panel appears. Also, collapse and expand and move and resize the ndMail predictions panel. With ndMail 1.10, panels are responsive and adjust appropriately when screen size changes.
+
+The ndMail Predictions Panel
+
+1	Relevancy rank. See the prediction accuracy for the predicted locations.
+2	Rename. Rename an item subject before filing.
+3	Access. View or edit access to the item you want to file.
+4	Pinned locations. Show or hide pinned locations.
+5	Refresh. Click to manually refresh the predicted filing locations.
+6
+Browse. Select other locations for filing. The newly-selected location remains at the top of other predictions on the panel.
+
+7	Settings. Specify ndMail settings to file an item.
+Note: This option is available with 1.1 release.
+8	Collapse/expand chevron icon. Show or hide the predictions panel.
+9	Search. Search for more locations to file an item.
+10	The Cabinet tabs. Select the cabinet where you want to file an item.
+11	Pre-selected location. See the cabinet tabs where the filing location is automatically pre-selected by conversation filing.
+12	File vs File&Move. Automatically move the filed item to the selected folder when filing.
+The predictions panel is also available in the French, German, and Spanish languages.
+Note: This feature requires ndMail 1.9+ and ndOffice 2.7+.
+
+To view the diagram that illustrates how ndMail predictions panel works, see ndMail diagram.
+
+Back to Top
+
+Primary Strategies for Generating ndMail Filing Predictions
+The locations to which emails participating in a conversation are filed
+When generating predictions for a particular email, ndMail will identify other emails that have been filed which are participants in the conversation thread. ndMail will offer the locations of those emails as recommended filing locations.
+
+The locations to which emails exchanged with a particular user are filed by any user in a cabinet
+When an email is filed, ndMail identifies the email address with whom the filing user is interacting and manages a history of where emails related to the opposite party are filed. ndMail will then generate recommendations based on the cabinet users' collective filing history, which will suggest locations based on where emails exchanged with a particular email address have been recently filed.
+
+The locations to which emails are filed for the filing user
+When an email is filed, ndMail will manage each user's individual filing history. ndMail will make recommendations based on where a user has recently filed emails.
+
+The locations in which similar documents to the current email are filed
+ndMail will make recommendations by looking for filing locations with emails similar to the email for which predictions are being generated. Sender, recipients, attachment names, and subject are taken into consideration when generating predictions.
+
+Back to Top
+
+ndMail Settings
+To access your ndMail settings, select the Settings   button in the upper-right corner of the ndMail predictions panel. After selecting it, the ndMail Settings dialog opens.
+
+The following options are available:
+
+Select Folder to set up File & Move: When filing, automatically move the filed item to the selected folder. For this, choose the Select folder link, and in the Select Folder dialog, select the desired location. On the ndMail Predictions Panel, find the File and File & Move dropdown options. The File & Move button automatically moves the filed item out of the current folder and into the selected location.
+Do not move Sent Items: Keep sent items in the Sent Items folder even if File & Move is enabled.
+Prompt to file outgoing messages: Select this checkbox to see a prompt for selecting the location when sending an item. The prompt only displays the first time the user selects Send and shows up as a red line around the filing panel which blinks three times. After this first prompt, the user can still send the item without filing, if needed, by selecting Send again.
+Note: See the additional registry settings to continually prompt them (i.e. force them to file on send)
+Enable Attach-Match: The NetDocuments Attach Match feature is designed to identify if an attachment is already a document in NetDocuments and easily upload that as a new version of the existing document. If Attach Match recognizes the attachment as an already existing document, the user will be prompted to save it as a new version. Click here to learn more about Attach Match.
+Only prompt one time per email:  If checked, the Attach Match banner will be shown only once even if the user does not click anything (i.e., view details, ignore, etc.) on Attach Match banner.
+Conversation filing: Pre-select the filing location where other emails of the conversation are filed. Note: When Conversation filing is enabled, the File & Move feature cannot be used. If File & Move is enabled at the time that Conversation Filing is enabled, the File & Move option will become disabled. This is to prevent emails from being unintentionally moved from the appropriate inbox/folder after filing.
+Enable one-click filing: After selecting a filing location, the current email will be filed automatically when the next email is selected.
+Show relevancy rank for predictions: Select this checkbox to see the relevancy ranking for predictions on the Main and Inspector views of different Outlook items. Relevancy rank tooltip indicates the recent location. Note that in an effort to optimize space, the default in 1.1 is to not show the relevancy rankings.
+Check for updates: View information about your current version and select Check for updates to check if a new version of ndMail is available.
+Disable auto updates: If this option is checked, ndMail will not check for a new version until you click Check for Updates. If you do not have the Disable auto updates option checked, ndMail will check for a new version of itself every time Outlook is started. If it detects a new version, the Check for Updates option will then read New update available. If you click on that text, you will then be prompted to update to the latest version of ndMail.
+Back to Top
+
+
+Providing Access to Participants
+When filing an email, you have a few options for setting access in NetDocuments. A filed email always picks up the filing location's default access unless you specify otherwise. To change the default access select the Default icon located at the bottom of the predictions panel:
+
+You will see a Participants option appears next to Me and Default options.
+
+All three options are available by default, and you can select different combinations. By selecting Participants, you allow the internal sender and internal recipients of the email to access the filed item in NetDocuments.
+
+Hover over Participants or Me, and the Only button appears.
+
+To clear other check boxes, select Only. Note that your administrator may disable the Me only filing option.
+
+When you get an email with Confidential, Private or Personal sensitivity level, default access is Participants. For Normal sensitivity level, access is Default.
+
+Back to Top
+
+
+
+Outlook Panels
+Note: This feature requires ndOffice 2.5.
+
+With the ndMail 1.2 release, NetDocuments panels with navigation tree, documents list, and preview appear in Outlook.
+
+Note: Your administrator must enable the panels in the corresponding registry setting.
+
+Select any folder to view the Documents List.
+
+In the Documents List, you can right-click the filed items, and then select one of the following options:
+
+Open
+Open as read-only
+Open as a new document
+Open as a new version
+Rename
+Print
+Copy link
+Copy ID
+Email link
+Email copy
+Profile details
+Lock document
+Reply
+Reply all
+Forward
+Open a version
+Versions and attachments
+In case you disable ndMail add-in for your Outlook, the panels are still available.
+
+Relevancy Rank
+Next to filing locations, you can see the real prediction accuracy percentage for the location and have visibility on its relevance and make a proper decision on selecting the filing location.
+
+No lines colored – 0 percent and disabled ranking and also manually-added locations from the Select filing location dialog or by using the quick search
+One line – 1-19 percent relevancy
+Two lines colored – 20-39 percent relevancy
+Three lines colored – 40-59 percent relevancy
+Four lines – 60-79 percent relevancy
+Five lines ->=80 percent relevancy
+Note: With 1.1 release, you can see the "Rank: 0 (Recently used location)" tooltip, in case prediction returned from the server has "0" relevancy rank.
+
+The Cabinet Tabs
+From the Cabinet tabs, select the cabinet to file an item. This cabinet remains selected for the next items to file until you select a new one from the Cabinet tabs. The filing is performed only per selected cabinet.
+
+If you select a location in a particular cabinet but decide to navigate to another cabinet, then the selected location in the previous cabinet is lost.
+
+If there are no cabinets available, the following message appears: The server cannot display filing locations without an active repository. Please contact your administrator.
+
+Back to Top
+
+Global Filing Indicator
+The global (firm-wide) filing indicator shows items in your mailbox that you or someone else at your organization filed.
+
+With 1.6, the GFI process will check all cabinets that you have open as tabs on the ndMail predictions panel and will set the GFI for that item (if it is found to be filed in any of those cabinets). Additionally, if an item is filed in a cabinet that is not the active cabinet tab, a blue checkmark appears on the cabinet tab where the item is filed, as shown below.
+
+Tip: You can leave the ndMail predictions panel collapsed and the GFI will continue to update.
+
+With 1.7, an outlined checkmark appears to indicate the cabinet tabs where the filing location is automatically pre-selected by conversation filing.
+
+When replying or forwarding an email, ndMail pre-selects the location automatically if any emails in the conversation were filed by another NetDocuments user at your organization.
+
+NOTE: The GFI will appear for any locations that filing is allowed. If you have disabled filing for some container types (workspaces, filters, etc.) in the cabinet admin page and the item is filed to one of those disabled container types, then the GFI will not show.
+
+Back to Top
+
+Collapse or Expand the ndMail Predictions Panel
+Either collapse or expand the ndMail predictions panel by selecting the V icon. Also, set the appropriate value in HKCU hive. Learn More
+
+With ndMail 1.10, panels are responsive and adjust appropriately when screen size changes.
+
+Back to Top
+
+ndMail Folder Mapping
+Note: If you wish to
+
+ndMail folder mapping creates links between Outlook and NetDocuments folders. Any emails filed into a linked Outlook folder is automatically profiled to NetDocuments correctly, which means that you can leverage existing Outlook folders without changing the way you work.
+
+
+Note: As Folder Mapping utilizes locally cached copies of emails to save them to NetDocuments, the Cached Exchange Mode option in Outlook must be on. To enable this option click File in Outlook then Account Settings and then Account Settings again. In the dialog that appears, select change.
+In the following dialog that appears, check the 'Used Cached Exchange Mode to download email to an Outlook data file' option and select how far back in time you would like to cache the emails. Going father back in time will increase the size of your Outlook data file. Folder mapping will only file emails as far back as Cache Exchange Mode is set to.
+
+On the Microsoft Outlook ribbon, you can see the ndMail tab.
+
+Pause and Start
+If syncing pauses, the existing items and the items you have moved to this Outlook folder will be added to the queue and will not be uploaded to the NetDocuments Web Interface. Upon selecting Start, syncing will be started and all items will be uploaded to the NetDocuments Web Interface.
+
+With the ndMail 1.10 Release, you can disable the Start/Pause button via the existing MappingMode registry key.
+
+ndMail Monitor List
+After selecting the ndMail Monitor List button, the Link to NetDocuments dialog opens.
+
+The following options are available:
+
+Edit - Click to change the Outlook folder to NetDocuments folder linking. Upon selecting this option, the Link Folder to NetDocuments dialog opens. You can either unlink the corresponding folder, re-sync it, or edit the previously specified settings by selecting the ellipses button. Note: Select the ellipses button, to open the Select location in NetDocuments dialog, where you can edit the needed location for folder mapping.
+Unlink - Select to unlink the Outlook folder. Emails from this folder will no longer be automatically copied to NetDocuments.
+Re-Sync - Select to start copying items to NetDocuments from this folder. Two options are available:
+Only emails that have not been copied previously
+All emails (even if they were copied previously)
+Failed Emails - Click this link to view error emails. You can find the information on the error itself, email address, subject, delivery date, and folder path in Outlook.
+Note: Right-click the needed folder, and then select Edit/Remove ND Folder Mapping to open the same Link to NetDocuments dialog.
+
+More
+Select More to get to the following options.
+
+Folder Mapping Settings
+Help
+About Folder Mapping
+
+Folder Mapping Settings
+In the Settings dialog, you can see two tabs: General Setting and Advanced.
+
+After selecting the General Setting tab, you can select the following options:
+
+Add category "filed to ND" once the item has successfully been uploaded to NetDocuments - When checked, a purple Outlook category marker will be added to emails filed using folder mapping.
+Display notifications balloon (for errors) in system Tray- When checked, any ndMail errors will appear as a notification in the user's system tray.
+Append "(nd)" to the names of mapped folders - When checked, this will add (nd) to the end of names of folders linked to NetDocuments.
+Note: Administrators can force users to map new Outlook folders. In that case, when a new folder is created, a dialog appears forcing the user to map a folder. This is accomplished using the ForceMapOnFolderCreate registry key.
+After selecting the Advanced tab, you can select the following options:
+
+Enable troubleshooting logging - Select this checkbox to record the more verbose troubleshooting logs which you can view by clicking the View Log Folder button.
+Clear Error List - Clears the error list that has been generated when copying emails to NetDocuments. This error list is accessible from the Failed Emails option on the ndmail Monitor List screen. These errors are generated if filing emails to NetDocuments fails.
+Clear Main Queue - This is used to clear the emails that are currently queued to be filed to NetDocuments.
+Clean Mappings - This feature is used to detect possible issues with existing mappings. It searches for the following issues:
+     •    If the mapped folder has been renamed in Outlook
+     •    If the mapped folder’s path has been changed
+     •    If the mapped folder has been deleted
+Selecting this option will look for these problems and offer a resolution, if available.
+Clear Secondary Queue - Used to clear emails currently in the secondary queue that are waiting to be filed to NetDocuments. The secondary queue contains emails that are waiting for a response from the Netdocuments server to complete filing. These items' filing requests have already been sent to NetDocuments but are still waiting for a response from the server. The number of items in this queue can be seen from the ndmail Monitor List screen.
+Import Mappings - Selecting this option will open a screen which can be used to view, add, or delete the current mappings via raw JSON data. NOTE: When saving the JSON, only the JSON structure is validated but the values in the JSON fields are not.
+Help
+Selecting the Help option will open a new browser tab, bringing the user to the NetDocuments support website.
+
+About Folder Mapping
+This option with open a new screen within Outlook containing the user's current version of Folder Mapping.
+
+Notification Settings
+After ndMail files an item successfully, with Windows 10, a system notification appears at the far right of the taskbar. Also, view warning messages about errors that might have occurred during the document upload or download. Please note that Windows 7 doesn't have the same notifications due to limitations with the older operating system.
+
+After ndMail files an item successfully to a selected location, the following notification message appears. This message appears for 6 seconds. To view the filed item on the NetDocuments web interface, select View in ND.
+
+If ndMail does not file an item successfully, the following notification message appears for 25 seconds.
+
+If this message appears, check if you:
+
+Are filing an item to the correct ndMail configured cabinet
+Have properly configured the Exchange Web Service
+Are filing Exchange account emails
+Otherwise, contact your administrator, if the problem persists. Learn more to Customize Notification Settings.
+
+IMPORTANT: If you do not get a notification that your email has been filed immediately, that does not mean your email is not being filed. While we anticipate filing to take only a few minutes under normal circumstances, there are times where filing times may be increased due to heavy system loads.
+
+How to Use ndMail
+User Topics
+
+Rename a Subject before Filing an Email
+Access a Filed Item
+Refresh an Email
+Pin Predicted Locations
+Use Outlook Panels
+Search an Item
+Browse for Filing Location
+File an Email Conversation to NetDocuments
+File a Conversation to NetDocuments
+Conversation Filing Exclusions
+Send and File an Email to NetDocuments
+Map ndMail Folders to NetDocuments
+Migrate Cloud Mappings
+Keyboard Shortcuts
+Customize Notification Settings
+Rename a Subject before Filing an Email
+Rename the subject before filing an item.
+
+To rename an item subject before filing an item:
+
+Select an item to file, and then, in the ndMail predictions panel, select Rename.
+In the edit field that appears, type the name for the selected item, and then select Apply. You can enter up to 200 characters in the edit field.
+To file the item to the needed location, select File.
+To revert changes, press ESC.
+To cancel renaming, press ESC twice, or press ESC, and then select Apply to close the edit mode.
+Note: These characters are not supported for renaming: "/\:*?""<>| "
+Access a Filed Item
+To edit access to the item that you want to file, click the Access option (appear as listed below), select the checkbox(es) > Apply.
+
+Default—Inherit access from the selected location. This setting is always selected for each next email to file.
+Me—Only you can access the filed item. (With 1.10, this option is unavailable when AllowAccessOptionMe is False).
+Participants—The internal sender and internal recipients (To and Cc fields) of the email have access to the filed item in NetDocuments.
+Hover over Participants or Me, and the Only button appears. To clear other checkboxes, select Only. Note that your administrator may disable the Me only filing option.
+
+When you get an email with the Confidential, Private, or Personal sensitivity level, default access is Participants. For the Normal sensitivity level, access is Default.
+
+Back to Top
+
+Refresh an Item
+An automatic refresh occurs after entering or changing the subject for a new email, adding recipients to To and Cc fields, or adding attachments.
+
+Note: On automatic refresh, changes are not lost, except changing a recipient in the Bcc field, as Bcc recipients are not factored into predictions or access.
+
+On the ndMail predictions panel, select Refresh to manually refresh the predicted filing locations. After selecting Refresh, a notification message appears informing that the selected location, subject renaming, or the modified access reverts to default values.
+
+With ndMail 1.10, you don't generate predictions for items that are excluded from filing via Registry Settings.
+
+Back to Top
+
+Pin Predicted Locations
+With ndMail 1.9, you can pin a location to the top of the predictions panel.
+
+To pin a location, hover over the prediction and select the Pin icon that appears. This prediction will now stay at the top of your list.
+
+You can have up to 5 pinned locations for each cabinet.
+
+If you want to hide the pinned locations, in the upper-right corner, select the orange pushpin icon.
+
+This will allow standard predictions to fill in your prediction panel.
+
+Use Outlook Panels
+Note: This feature requires ndOffice 2.5.
+
+Collapse, expand, and resize the Navigation Tree panel. Additionally, you can resize all Outlook panels.
+
+To add a new folder, go to the Documents List and select the document icon.
+
+To go to Workspace, in the Documents List, select the blue document icon.
+
+Above these icons, you can search documents within a chosen folder or cabinet.
+
+Select the drop arrow icon and choose the criteria for your search.
+
+You can search documents by:
+
+Document Name
+Document ID
+Created By
+Modified By
+Everything
+Additionally, you can select the Advanced Search option.
+
+To switch back from Folder View to your emails list, select the back arrow icon at the top of the panel.
+
+To preview a document, select it in the Documents List of the Outlook panel.
+
+To open a document, select the document name. Here you can also view a document version number and document ID on a document Reading Pane.
+
+To switch back from the Reading Pane to your email, select the arrow icon at the top of the panel.
+
+With ndMail 1.4, drag both email messages and their attachments to the Navigation Tree panel. After you drag the attachment to the Navigation Tree, the ndOffice Save dialog prompts you to fill in the required profile fields (if applicable to the location that you file to).
+
+Search an Item
+Search for the created filters, folders, and workspaces with keywords to find a location where you want to file a message, even if it is not shown on the predictions panel by default. Search appears as an icon that expands after selecting. The cursor automatically pops into the search field when you open it. To delete the entered value, you can select ESC.
+
+Note: You can enter up to 200 characters in the search field.
+
+If you wish to do a partial word search, use an asterisk (*) to search for part of a word. For example: Ple* to search for pleadings.
+
+Your Favorite and Recent workspaces appear immediately when you open the search field in a workspace-based cabinet.
+Your recently used locations appear in a separate section below the search results.
+
+Back to Top
+
+Browse to a Filing Location
+From the Cabinet tabs, select the needed cabinet, which you can access.
+Select Browse.
+In the Select filing location dialog, navigate to the needed folder > Select.
+
+The Select Filing Location Dialog
+Search for a filing location by:
+Location Name
+Location ID
+Created By
+Modified By
+Everything
+(optional) In the Select filing location dialog, to create a new folder, select Add Folder, or to find a workspace select Go to Workspace > Select.
+After filing an item, the predicted filing locations appears for the next item. Find the recent filing locations in the predictions panel for a new message so that you can later file this message to the needed location.
+Back to Top
+
+File an Email to NetDocuments
+To file an existing item, select a location and select the File button. To save time, you can file multiple items at the same time to the same selected locations. Any items can be filed together: emails, meetings, receipts (read, delivered), and meeting responses (accepted, declined, tentative).
+
+Note: You can file up to 25 items at once.
+
+To view the needed location in NetDocuments:
+
+Right-click the selected location, and then select Go to location in ND.
+Select View in ND on the notification message that appears after you have successfully filed an item.
+
+With the 1.1 release, you can also view the full path of a location, right-click it, and then select View full path.
+
+When you select this option, a background process runs to fetch the full path. During this process, you'll notice the ellipsis (...) scrolling. Then the path will be cached as a tooltip on your machine any time that location comes up as a prediction in the future.
+
+Also, with the 1.1 release, the prompt that appears as a red line around the filing pane blinks three times.
+
+It will be displayed from the first time you select Send. After this first prompt, select Send again if you still want to send the item without filing.
+
+To see this prompt, select the Prompt to file outgoing messages checkbox in the ndMail Settings dialog.
+
+For more information, see ndMail Interface Overview.
+
+Back to Top
+
+File an Email Conversation to NetDocuments
+With 1.7, after you file one email in the conversation, ndMail can automatically pre-select the same NetDocuments location for all items in this conversation.
+
+Best Practice Note: Conversation filing automatically selects a filing location without any user interaction and, as such, we recommend it for power users or users who are trained on its functionality.
+
+If one-click filing is disabled, then select the File button to file the pre-selected item.
+
+If one-click filing is enabled, then after you move away from the email, ndMail files the email to the pre-selected location.
+
+Conversation Filing Exclusions
+Conversation Filing Exclusions provides a way for those who utilize conversation filing to choose which messages in an email thread they do not wish to be filed. In the case that there may be sensitive or irrelevant information in an email, those emails can simply be excluded from filing.
+Starting with ndMail 1.11, users who have conversation filing enabled will see a green icon  located just to the left of the file button.
+
+When a message is set to be filed automatically using conversation filing, the icon is green. When the user decides that certain messages in a conversation should not be filed, they can click the green icon  to activate conversation filing exclusions. Upon clicking this icon, the user will be presented with two options:
+
+This Message Only: Choose this option when you would like the single message that you are currently on to be excluded
+
+This Thread: Choose this option when you would like to exclude the rest of the messages in an email conversation
+
+
+If the This Message Only option is selected, a green icon with an orange circle in the corner  will appear, indicating that filing has been paused for this one message. If the This Thread option is selected, the icon will change to orange  indicating that the remainder of the messages within the conversation will not be filed.
+If a user would like to undo any of these actions, clicking the filing exclusion icon will resume filing on that item or conversation and the icon will change back to the original  icon.
+
+
+Send and File an Email to NetDocuments
+ndMail provides one-click filing through machine learning by predicting the best filing locations.
+
+To file a new item, select a location and then click Send. The item will be automatically filed when it is sent.
+
+Note: Drafts can't be filed because they haven't been sent.
+
+To send and file a new email:
+
+Select New Email (or Reply or Forward an email) to write a new message.
+Draft and review the email message, and then select a filing location.
+Note: You can also send and file a meeting.
+
+Select Send.
+Now, the email message is filed to the selected location.
+
+Back to Top
+
+Use ndMail to Map Outlook Folders to NetDocuments
+ndMail folder mapping creates links between Outlook and NetDocuments folders. Any emails filed into a linked Outlook folder are automatically profiled to NetDocuments correctly, which means that you can leverage existing Outlook folders without changing the way you work.
+
+To map Outlook folders:
+
+Install the ndMail Folder Mapping by running the ndMail .exe installer, and then open Microsoft Outlook.
+If prompted, enter your NetDocuments username and password.
+
+Right-click the needed folder in Outlook, and then select Map Folder to ND.
+In the Select location in NetDocuments dialog, select the folder you want to link to in NetDocuments, and then select OK.
+In the Link Folder to NetDocuments dialog, specify the following options, as needed:
+Access—Controls access to the items synced from this folder to NetDocuments.
+Default – Inherit access from the selected folder.
+Me – Only you can access the synced item.
+Participants - The internal sender and internal recipients (To and Cc fields) of the email have access to the synced item in NetDocuments.
+Delete emails from Outlook after successful upload—Deletes your emails from the mapped folder after successful upload to NetDocuments.
+Link (unmapped) subfolders too—Allows the syncing of all sub-folders to the mapped folder in NetDocuments.
+Copy pre-existing emails too—Copies all pre-existing items from the Outlook folder to NetDocuments.
+After specifying the needed options, select Link. The corresponding message appears notifying you about the successful mapping to the selected folder.
+Now that the folder is successfully linked, users may drag and drop emails to the mapped folder and those email will be filed to the corresponding location in NetDocuments.
+
+Note: If a mapped folder is deleted from Outlook, all emails filed to NetDocuments before the folder was deleted will remain in NetDocuments.
+
+Delegate Mapping
+With ndMail 1.4 and higher, you can map folders from a delegate or shared account. The steps are the same as mapping your Outlook folders. Only the mapping creator can edit it.
+
+Note: Both the mailbox owner and the delegate need Folder Mapping 1.0.7025 (installed by default with ndMail 1.4 .exe).
+
+ndMail 1.4 prompts you to map a new folder to NetDocuments after creation. This is optional and you can disable it via a registry setting.
+
+When you create a folder in Outlook, the dialog appears:
+
+With ndMail 1.7, the Clean Mappings option appears. It helps you when troubleshooting issues or cleans up old mapped folders.
+
+To do that:
+
+Go to the ndMail tab and select More.
+Select Folder Mapping Settings.
+In the Advanced tab, select Clean Mappings.
+The process will run and will identify the following common scenarios if they exist among your mapped folders:
+
+If your settings are set to append (nd) or some other value at the end of mapped folders' names, the Clean Mappings function will identify if any of the mapped folders have had that suffix removed or modified so you can add it back if desired.
+If any unmapped folder has the (nd) suffix after it, the Clean Mappings function will identify it and you can fix it if desired.
+If a user has permanently deleted an Outlook folder that was previously mapped, Clean Mappings will identify it and you can remove/repair the mapping.
+When you select Clean Mappings, the following dialog appears:
+
+Each row in the table corresponds to one Outlook folder where one of the above issues was identified. You can either go fix those issues or remove the row from this table if you do not want to fix the issue and don't want it identified as an issue in the future.
+
+See our Delegate Folder Mapping  article for a more in depth look at Folder Mapping and how to set it up.
+
+
+Back to Top
+
+Keyboard Shortcuts
+Keyboard shortcuts are available for key features in the ndMail predictions panel. For any keyboard shortcuts beginning with ALT, first select a location from the predictions panel and then execute the shortcut.
+
+ALT+Z* - Navigate to the ndMail panel/Expand the collapsed ndMail panel
+ALT+X - Move out from the panel
+ALT+S - Search
+ALT+C - Switch cabinet tabs
+ALT+B - Browse
+ALT+A - Access
+ALT+R - Rename
+ALT+F / ALT+M - File / File&Move
+When you enter text in the Rename field, press Esc to return to the previous state.
+Press Tab to navigate through the ndMail panel controls, and press arrow keys to move focus through filing locations.
+Press Enter or Space to interact with a given option/control.
+*NOTE: To be able to use the ALT+Z shortcut, users must have the IsShortcutForFocusEnabled registry setting with a True value in the ndMail registry hive.
+Back to Top
+
+Customize Notification Settings
+After an item has been successfully filed, a system notification appears at the far right of the taskbar. You can also see warning messages about errors that might have occurred during the document upload or download.
+
+After an item has been successfully filed to a selected location, the following notification message appears. This message is shown for 6 seconds. To view the filed item in NetDocuments, click View in ND.
+
+If an item has not been filed successfully, the following notification message appears. It is shown for 25 seconds.
+
+You need to check whether:
+
+You are filing an item to the correct cabinet that has been configured for ndMail.
+You have properly configured the Exchange Web Service.
+You are filing emails that are associated with your Exchange account.
+Otherwise, you need to contact your administrator, if the problem persists.
+
+In Windows 10, do the following to customize notification settings:
+
+Select Start, and then select Settings.
+Select System, and then select Notifications & actions.
+Under Get notifications from these senders, click NetDocuments ndMail.
+Under NetDocuments ndMail, specify the following notification settings:
+Notifications – Turn on or off the ndMail notification messages.
+Show notification banners – Show or hide notification messages in the notification area.
+Keep notifications private on the lock screen – Show or hide notification messages when the screen is locked.
+Show notifications in action center – Turn on or off the notification messages in the action center.
+Play a sound when a notification arrives –Turn on or off the notification message sound.
+A number of notifications visible in actions center – Specify how many notifications appear.
+Priority of notifications visible in action center – Set the priority of notifications from ndMail.
+Windows 7 does not support the same customizable notifications because these are a feature of the Windows 10 OS.
+
+
+Migrate Mappings to the Cloud
+ndMail 1.13 has a feature built in that allows users to migrate their local NetDocuments folder mappings to be used with their NetDocuments M365 Outlook add-in and/or ndMail for M365 add-in.
+
+Important: Before migrating mappings to any NetDocuments M365 add-in there are a few things to keep in mind:
+1. Ensure that you have set up folder mapping via M365 by using a Graph API Connection to facilitate the connection. This will not work properly without this setup.
+2. If you receive an error stating "Mapping not sent - The profile name length should be between 1 and 1000 characters.", click here to see how to resolve it.
+
+To migrate your mappings, click the ndMail tab at the top of your Outlook desktop client then select ndMail Monitor List.
+
+
+In the window that appears, select the Migrate Mappings to M365 option in the bottom right corner of the screen:
+
+A pop-up will appear, asking you to confirm your decision. You will see the option to Delete upon successful creation in M365. Checking this box will remove your local ndMail folder mappings from your Outlook. Keep this unchecked if you wish to keep your current folder mappings in Outlook desktop.
+
+Click Migrate and then Yes on the following pop-up to begin the migration process.
+
+You will see a new column appear in your mappings titled Migrate Mappings to M365 indicating if the mapping migration is in progress, completed, or failed. A pop-up will also appear indicating the progress of the mappings being sent over to the Outlook M365 add-in for processing. This does not mean that they will appear in your M365 instantly. It still may take some time (minutes to hours depending on server load and size of job) for them to appear after the progress bar is complete.
+
+Once every folder has been processed to be sent to M365, the following pop-up will appear:
+
+
+Keep an eye on the Migrate Mappings to M365 column. Once the row for that mapping reads Complete, the mapping’s migration is done.
+
+Note: If you migrate your mappings to the M365 add-in but do not delete them from the desktop add-in at that time, but later unlink the mappings from the M365 add-in, the appended nd characters (if being used) will be removed from the name of the mapped folders in the Outlook desktop add-in. The folders are still linked in the desktop app, this is only a display issue and does not affect how the mappings work.
+
+Migration Tool Limits:
+You cannot migrate more than 1000 in one request.
+You cannot have more than 130 attributes per folder mapping.
+You can only attempt to migrate a mapping once. Failed migrations can’t be retried.
+Mappings that are delegated will only migrate if you are the owner.
+This process is done server side and migrations will not always appear in real time. Depending on many factors it may take several hours for all mappings to migrate.
+
+Troubleshooting error "The profile name length should be between 1 and 1000 characters."
+When migrating your mappings, if you receive an error that states "Mapping not sent - The profile name length should be between 1 and 1000 characters.". This is because a blank profile attribute is present somewhere in the json file that makes up the mapping. Therefore, you must resolve this issue in the json file. It is advisable to have an IT administrator resolve this issue for you.
+To access the json file. open outlook select the ndmail tab from the Outlook ribbon> More > Folder Mapping Settings > Advanced Tab > Import Mappings.
+
+The Import Mappings screen will initially appear blank. click the Load Mappings button to populate the mappings for the account.
+When the mappings appear, copy them into a separate file such as a word document or notepad file. Save a copy for backup.
+
+Within the text of the file, you are looking to remove any blank attributes. Attributes will normally have text in between the quotes. For example: "Client". Blank attributes will look like so: ""
+
+The quickest way to identify blank attributes will be to search them out with ctrl+f. Once you've identified and removed all instances of "", copy the json file you just edited and replace the text of the old json file in the ndMail Import Mappings screen with the text you just edited. Click Save and try importing your mappings again.

@@ -1,0 +1,367 @@
+Workspace Security Manager
+Jun 24, 2024•Knowledge
+Content
+image.png
+Table of Contents
+Overview
+Configure Workspace Security Manager
+WSM Admin Page
+The Policies Tab
+Create a Policy
+Details Tab
+Access Tab
+Edit an Existing Policy
+The Workspaces Tab
+Bulk Upload of Policies
+Bulk Application of a Policy to Many Workspaces
+Using Persistent Security
+Overview
+Workspace Security Manager (WSM) simplifies security management by creating policies that contain users and groups with assigned permissions, and controls for locking the permissions to create walls, and for sharing confidential data.
+
+WSM policies are created, managed, and applied at the Cabinet level. A policy can be applied to many workspaces within a cabinet but a workspace and its contents may only have a single policy applied to them.
+
+When a WSM policy is applied, the permissions in the policy are published to all containers and content items within the workspaces to which the policy is applied.
+
+Note: If the workspace contains tens of thousands of objects, this will take some time to complete.
+
+If the control has been set to lock these permissions to create a wall, then these permissions cannot be canceled by other NetDocuments governance mechanisms. In that case, they must be managed by editing the permissions granted by the policy.
+
+Understanding WSM security:
+WSM policies apply permissions by overwriting existing permissions (removing and replacing), including permissions put in place by:
+Folder inheritance
+Filing to workspace or folder
+Link to Author
+Profile-based Security
+WSM includes an inheritance mechanism, if you move or copy a content item to a Workspace that is governed by a WSM policy, the content item will inherit the permissions put in place by the policy.
+If a Wall control is set in the policy, and locking the permissions is applied by the policy, then no other NetDocuments method can change the Access Control List on items in the Workspaces to which the policy is applied.
+The permissions applied by a WSM policy will override those applied by the user via NetDocuments client software:
+ndOffice Save as Private — the user will receive a warning message and if the document is saved into a workspace where a WSM policy is applied, then the permissions from the policy are applied to the document
+ndMail Save as Recipient — the user will receive a warning message and if the email is saved into a workspace where a WSM policy is applied, then the permissions from the policy are applied to the document
+Configure Workspace Security Manager
+A NetDocuments Repository Administrator will need to configure Workspace Security Manager before it can be utilized. To do so, first a group (or groups) that is assigned to administer Workspace Security Manager will need to be assigned rights. To do so navigate to the Security Center tab in the NetDocuments Admin Console.
+
+Upon navigation to the page, you will see the Workspace Security Manager section will read Setup required:
+Graphical user interface, text, application, chat or text message  Description automatically generated
+
+Click Setup required to begin using the WSM Config Assistant to setup WSM.
+
+A pop-up will appear:
+Graphical user interface, text, application  Description automatically generated
+
+1. Select your desired Cabinet.
+2. You can choose to either Create a new group or Use an existing group.
+
+a. If you Create a new group, type a name in the Group name field. If you wish, select Add me to this group, which will automatically add your user to the new group.
+
+b. If you Use an existing group, place your cursor in the User group field and choose the group from the dropdown that appears. You may also add your user to this group if needed.
+
+3. Once all fields are filled out, select submit. You will receive a notification in the bottom right corner of your screen noting that the selected group is now able to manage WSM.
+
+Now that the WSM admin configuration is complete, you may proceed to applying policies to workspaces. Continue on the next section to learn how to do so.
+
+Hint: If you wish to give additional groups the ability to manage WSM, any WSM administrator may navigate to Admin Console > Security Center > Workspace Security Manager and select the Add WSM admins option on the right side of the screen:
+Graphical user interface, text, application, email  Description automatically generated
+
+WSM Admin Page
+If a Repository Administrator or Cabinet Administrator wishes to access the Workspace Security Manager page, they will need to go to Admin Console > Security Center. This will be where WSM policies will be created and applied.
+Note: If Workspace Security Manager is not able to be clicked on from this section, you are either not yet a member of an appropriate WSM Enabled security group (which is applied per cabinet) or WSM has not been configured in your repository yet.
+
+If a user has been assigned to a group that will administer Workspace security manager but is not either a repository admin or a cabinet admin, they will access Workspace Security manager in a different way. See the below steps for those users:
+
+On the Home page, select the Hi, <username> dropdown menu, and then select Admin.
+WSM_User_Rights.png
+
+Select the appropriate Repository.
+Select Manage WSM Policies from the panel that appears. This will bring the user to the WSM Admin Page.
+WSM_User_Rights_2.png
+
+The WSM Admin page has two tabs: the Policies tab and the Workspaces tab.
+
+The Policies tab is used for creating, editing, and managing policies.
+
+The Workspaces tab is used for finding and applying an existing policy to one or more workspaces. Before you start work with either tab, use the dropdown menu in the upper-right corner to select a cabinet.
+
+cabinet.png
+
+
+
+The Policies Tab
+On the Policies tab, you will see a list of the existing policies with the workspaces to which they have been applied.
+
+Using the search box, you can find any existing policy.
+
+policies_list.png
+
+Create a Policy
+To create a new WSM policy, select the Create Policy button. Three options will appear in a dropdown menu:
+
+Create blank Policy: Select this option to create a completely new policy.
+Copy existing policy: Select this option when you would like to copy a policy's access and settings. When selecting this option, a prompt will appear that allows the user to select which existing policy they would like to copy. The policy's access and settings will be copied. The policy name and description  fields will need to be filled in, however.
+Create from workspace: Select this option when you would like to copy a specific workspace's access for a policy. When selecting this option, a prompt will appear that allows the user to select which workspace they would like to copy the access from. All other fields and options will need to be filled in.
+Create Policy from CSV: Allows you to create multiple policies from one .csv. This is covered later in the documentation.
+image.png
+
+image.png
+
+Details Tab
+Policy Name: Give your policy a suitable unique descriptive name
+Description: Provide a description to help other WSM policy managers understand the potential for applying this policy to the workspaces
+Settings:
+Toggle the Send an effective rights report by email option if you wish to receive an email with the effective rights report, detailing the permissions, and controls set by this policy
+Toggle the Allow need to know collaboration via CollabSpaces option if you wish to add CollabSpaces to the Workspaces where this policy is applied. CollabSpaces do not inherit the WSM policy. The CollabSpace will need to have its access manually set from the CollabSpace Modify Access menu. If this toggle is turned off CollabSpaces cannot be created in workspaces where this policy is applied. If you have pre-existing CollabSpaces, and then apply a WSM policy without this turned on, or you turn off the flag for workspaces with a policy that already has it allowed, existing CollabSpaces (and their security) are preserved, but new CollabSpaces cannot be created for the workspaces under that policy.
+Toggle the Lock Policy option to set the policy as a wall which will lock the permissions and prevent them from being changed by Profile-Based Security or other permission inheritance methods.
+Access Tab
+On the Access tab, use the search box to find individual users and groups and add them to your policy. You can use filtering to narrow the search to users, or groups, internal or external.
+
+users_filter.png
+
+Note: The default is to search for groups, and the User box is cleared by default.
+
+If you wish to add individual users to a policy, use the filters and select the User checkbox to include individual users in your search.
+In the WSM admin console only, repository groups or users that otherwise are not on a certain cabinet membership list may be added to workspaces in that cabinet via this menu. For example, if you would like a member of your repository to have access to one workspace via WSM, they can have workspace access without having cabinet access.
+To change user rights, select a checkbox next to a user name, select Edit Rights, and choose the option from the dropdown list.
+To apply the same access to each member, select the Selected Users and Groups checkbox, and then select Edit Rights and choose the option from the dropdown list.
+You can use the Lock permissions button to lockdown a group's permissions in a policy with Persistent Security. This means that any groups with locked permissions cannot have their permissions changed anywhere in NetDocuments except from this page. When a group's permissions are locked, end-users will see a lock icon next to the group name where this policy is applied. End-users will be unable to change the group's access from the UI. This includes admins and through the API. If permissions must be changed or unlocked, the only place these permissions can be changed is from the WSM console. IMPORTANT: There are several scenarios in which security is applied differently based on the Set as a Wall property and the persistent or non-persistent state of entities assigned to a policy. Before you apply any persistent security, see the Persistent Security section of this article.
+image.png
+
+When you add users and groups, you can assign permissions to them using the standard VESA security model. This includes the No Access permission which is used if creating exclusionary Walls (applying Set the policy as a Wall option that locks permissions).
+
+
+Edit an Existing Policy
+Select the existing policy, and the information pane for the policy will appear. The information pane has 3 tabs: Details, Access, and History that allow you to examine the controls set in the policy, the permissions assigned, and the history of changes made to that policy.
+
+Select the Edit button to change the data on the Details or Access tabs.
+
+On the Access tab, you can add or remove a user or group, edit rights, and lock or unlock permissions to apply or remove persistent security. IMPORTANT: There are several scenarios in which security is applied differently based on the Set as a Wall property and the persistent or non-persistent state of entities assigned to a policy. Before you apply any persistent security, see the Persistent Security section of this article.
+
+image.png
+
+Note: If you unlock a previously locked policy, a pop-up will appear in which you must type AGREE to continue. This is to prevent the accidental unlocking of access
+image.png
+
+When you are in the edit mode for the existing policy, the APPLIED tab appears. This allows you to check which workspaces this policy has been applied to before making any changes to the controls and permissions:
+
+applied.png
+
+Select the Save button after making your changes. Before saving, you may use the Cancel button at any point to discard any changes.
+
+On the History tab, you can see all the changes made to the policy. That tab provides the ability to download a .csv file of the history for audit or other governance purposes:
+
+policy_history.png
+
+To delete one or more policies, select the Delete button, which is used in conjunction with the multi-select checkboxes.
+
+When you want to delete a policy, you will receive a notification, where you can download the history.
+
+Delete.png
+
+The Workspaces Tab
+As WSM is applied at the Cabinet level, when you select the Cabinet to work with, the Workspaces tab will be configured to search by the organizing attribute or attribute pairs (parent-child) used within that Cabinet.
+
+If you do not have any workspaces, the following message appears.
+
+No_workspaces.png
+
+Use the search box to find the workspaces with applied attributes.
+
+Select the Begin with option or Contain option to enter either the beginning or the containing value of the name.
+
+begin_with_search.png
+
+Workspaces that meet the search criteria appear in a scrollable list on the main part of the page. If the workspace already has a WSM Policy applied, you can see it in the list.
+
+You can also sort any column in ascending or descending order by selecting an arrow next to the column name.
+
+sorting.png
+
+Select the Go To Workspace link for quick navigation when adding workspaces to policies.
+
+Go_To_Workspace.png
+
+To assign a workspace to a policy:
+
+Select one or more checkboxes next to the workspace name, and then, on the right side of the page, select the Manage Policies link:
+manage_policies.png
+
+After you select the Manage Policy link, the assignment pane will appear from the right side of the page:
+
+The_assignment_pane_with_WSM_policies.png
+
+The assignment pane provides a scrollable list of existing WSM policies that can be applied to this workspace.
+
+The search box allows you to search for a policy. If you cannot find an existing policy you wish to apply, select the Create Policy button to create a new policy. See Create a Policy.
+
+When you hover over a row with WSM policies, the row will be highlighted and an Apply link will appear so that you can immediately apply the appropriate existing policy to this workspace.
+Apply_policy.png
+
+Select the policy name to view the details of the policy before applying it to the workspace.
+If control settings and assigned permissions of this policy are appropriate, select the Apply button to apply it to the workspace, or select the Cancel button to return to the previous page.
+After you have applied the policy, you can see the changes:
+
+on the Workspaces tab:
+workspace_policy.png
+
+on the Policies tab:
+policy_workspace.png
+
+on the Applied tab, when you are editing the policy:
+applied_policies.png
+
+If you apply the same policy to multiple workspaces, on the Policies tab, the number will indicate that there are more workspaces applied, for example (+2).
+
+more_workspaces.png
+
+If you want to delete a policy from the workspace, you do not necessarily need to apply a new policy:
+
+You can just go to the Applied tab.
+Select Remove.
+Select Save.
+remove_policy.png
+
+Now, the connection between the workspace and policy is removed.
+
+Note: When a policy is removed from a workspace, or a policy is deleted, the permissions assigned via the policy remain in place until they are changed by another mechanism.
+
+
+Bulk Upload of Policies
+To upload multiple policies at once, an administrator must create a .csv file in the following format:
+
+Name, Description, Access, Settings
+Policy name,My policy description,Vault-xxxxxxxx|VESA|$;UG-xxxxxxxx|VS|;NG-xxxxxxxx|DEFAULT|,SetThePolicyAsWall|SendAnEffectiveRightsReportByEmail|AllowNeedToKnowCollaborationViaCollabSpaces
+
+Note that each section is separated by comma. Below is a description of each section:
+Name: Choose a name. This cannot be more that 128 characters.
+Description: Describe your policy in 1,000 characters or less.
+Access: In the example above, you'll see an access string in which first an individual user, then a group, and lastly a whole cabinet have been given differing levels of access. The access string is composed using Profile Based Security. Note: The $ at the end of the rights access entry means persistent security. The format is Principal|VESA|$. Semicolon delimited.
+Settings: These three settings are pipe delimited (|) If they are present, they are true. If absent, they are false. These settings correspond with the settings in the details tab.
+
+These settings should not be put in an excel file and converted to .csv. We suggest using windows notepad to format your csv.
+
+Once you have created your .csv file, you can upload it by navigating to the WSM console, selecting Create Policy and clicking the Create Policy from CSV option:
+image.png
+
+Select your .csv file from the file picker and click Submit to upload it. You will receive a notification in the right corner of the screen that your upload has begun. When the .csv has finishes processing, you will receive an email that the job has finished. The email will tell you how many policies uploaded successfully and if any failed.
+
+
+Bulk Application of a Policy to Multiple Workspaces
+To apply WSM policies to multiple workspaces at one time, it is possible to upload a list of workspaces in .csv format with WSM policy identifiers.
+
+The .csv file will use the format of the workspace Parent, workspace Child (if appropriate), and Policy name:
+
+image.png
+
+To Bulk Apply Policies:
+
+On the right side of the page, select Bulk Apply Policies.
+bulk_apply.png
+Select the .csv file, and you will get the message Bulk policies apply operation successfully queued for X cabinet.
+You will receive an email confirming that the bulk policies apply operation was completed.
+For more information, see this file.
+
+
+Using Persistent Security
+How to Lock Permissions to Enable Persistent Security
+Persistent Security Scenarios
+What Will End-users See?
+Persistent security allows WSM administrators to Lock the access of certain groups per policy. When a group in a policy is locked with certain access, the permissions of that group cannot be changed anywhere in NetDocuments except from the WSM policy where the lock was applied. This can be done on the user level as well as the group level.
+
+When a group's permissions are locked, end-users will see a lock icon next to the group name where this policy is applied. End-users will be unable to change the group's access from the UI. This includes admins. If permissions must be changed or unlocked, the only place these permissions can be changed is from the WSM console.
+
+How to Lock Permissions to Enable Persistent Security
+Locking the permissions of a group can be done from the Access tab which appears when creating or editing a policy. When you have a group (or groups) selected, click the Lock Permissions button to apply persistent security. In the screenshot below, the selected group (Admin) will have its permissions locked. If a group is already locked, you may remove the lock by selecting Unlock Selected.
+image.png
+
+When a group is locked it is considered "persistent", as the access will be persistent throughout the policy and cannot be changed anywhere but the policy in which the group was locked. The ACL cannot be modified by any users (including Cabinet Administrators) via the front-end UI, ndOffice or any API calls that would attempt to alter the security on these documents.
+
+Note: If you apply a policy with persistent security to documents with a frozen ACL, the persistent security will be applied to the frozen ACL as persistent security takes precedence.
+
+IMPORTANT: There are several scenarios in which security is applied differently based on the “Set as a Wall” property, and the persistent or non-persistent state of entities assigned to a policy. We strongly encourage you to read the following scenarios to ensure you understand how persistent security functions in specific scenarios.
+
+Persistent Security Scenarios
+To fully understand the different scenarios, we must first cover the basics and then build upon that. The first scenario is one in which no WSM policy is applied:
+
+Baseline workspace (No WSM policy applied)
+image.png
+In this instance, the Workspace has the Partners group with VESA, and the Summer Associates group with V rights. These rights will be applied to all sub-folders and documents that are added to this workspace by default.
+
+“Normal” (non-persistent) WSM policy, “Set as a Wall” not enabled
+In this instance, the WSM policy has the Partners group defined with VES, and the Set as a Wall property is not enabled. Summer Associates is not defined in the policy:
+
+image.png
+As a result of the policy being applied, Partners is downgraded to VES from VESA, Summer Associates is removed entirely. Going forward, all documents or folders created in this workspace will have Partners with VES by default.
+
+Since this policy does not have the Set as a Wall property enabled, the ACL can be modified by any users (including Cabinet Administrators) via the front-end UI, ndOffice or any API calls that would attempt to alter the security on these documents.
+
+Is this policy set as a wall in the details tab of the policy? No
+Does this policy have persistent security applied to one or more groups? No
+
+“Normal” (non-persistent) WSM policy, “Set as a Wall” enabled
+In this instance, the WSM policy has the Partners group defined with VES, and the Set as a Wall property is enabled. Summer Associates is not defined in the policy:
+
+image.png
+As a result of the policy being applied, Partners is downgraded to VES from VESA, Summer Associates is removed entirely.  Going forward, all documents or folders created in this workspace will have Partners with VES by default.
+
+Since this policy does have the Set as a Wall property enabled, the ACL cannot be modified by any users (including Cabinet Administrators) via the front-end UI, ndOffice or any API calls that would attempt to alter the security on these documents.  Any changes to the security of the items in this workspace must be performed through policy updates through the WSM Admin console or via the API by a service account who is authorized to update WSM policies.
+Is this policy set as a wall in the details tab of the policy? Yes
+Does this policy have persistent security applied to one or more groups? No
+
+WSM policy with Persistent and non-Persistent entities, not “Set as a Wall”
+In this instance, the WSM policy has the Partners group defined with VES, non-persistent.  Summer Associates is defined in the policy with VE, which is persistent, and the “Set as a Wall” property is not enabled:
+
+image.png
+As a result of the policy being applied, Partners is downgraded to VES from VESA, Summer Associates is upgraded from V to VE. Since the persistent setting is set to Locked (Persistent) on Summer Associates, think of this as being a “partial wall”.  This means that only the group(s) or user(s) with this flag set are Locked from being changed through any means other than policy modification.
+
+Like our first “Normal” WSM policy example, all documents or folders created in this workspace will have Partners with VES by default.  Summer Associates will also have VE by default.
+
+Since this policy does not have the Set as a Wall property enabled, any portion of the ACL other than Summer Associates can be modified by any end user or API call with the appropriate rights to alter the security.  However, the Summer Associates group cannot be upgraded to VES or VESA, nor downgraded to V or N, unless it is done through the WSM administrative UI to change the policy, or via API by an authorized WSM administrator service account.
+Is this policy set as a wall in the details tab of the policy? No
+Does this policy have persistent security applied to one or more groups? Yes, the policy is mixed meaning at least one group has persistent security and at least one group does NOT have persistent security.
+
+WSM policy with Persistent and non-Persistent entities, “Set as a Wall” enabled
+In this instance, the WSM policy has the Partners group defined with VES, non-persistent. Summer Associates is defined in the policy with VE, which is persistent, and the “Set as a Wall” property is enabled:
+
+image.png
+As a result of the policy being applied, Partners is downgraded to VES from VESA, Summer Associates is upgraded from V to VE.   Going forward, all documents or folders created in this workspace will have Partners with VES and Summer Associates with VE by default.
+
+Since this policy does have the Set as a Wall property enabled, the ACL cannot be modified by any users (including Cabinet Administrators) via the front-end UI, ndOffice or any API calls that would attempt to alter the security on these documents.  Any changes to the security of the items in this workspace must be performed through policy updates through the WSM Admin console or via the API by a service account who is authorized to update WSM policies.
+
+Should the Set as a Wall property be set to false, the Summer Associates group and its VE security will remain persistent (again, think of this is a miniature wall), however the remainder of the ACL could be modified to upgrade/downgrade Partners, remove Partners or add other groups.
+
+If the Summer Associates group were to have “N” rights instead of “VE” as above, directly adding a member of the Summer Associates group to the ACL or adding another group where that same member was included would be trumped by the “N” rights that are persistent.  The next example below more clearly defines this scenario.
+Is this policy set as a wall in the details tab of the policy? Yes
+Does this policy have persistent security applied to one or more groups? Yes, the policy is mixed meaning at least one group has persistent security and at least one group does NOT have persistent security.
+
+
+WSM policy with only Persistent Entities, not “Set as a Wall”
+
+In this instance, the WSM policy has only the Summer Associates group defined with N access. This policy does not have “Set as a Wall” enabled:
+
+image.png
+As a result of the policy being applied, Partners is not downgraded to VES from VESA as in the prior examples.  Policies with only Persistent Entities are Additive. While Summer Associates is downgraded to N rights, all other non-persistent entities are preserved. Going forward, all documents or folders created in this workspace will have Partners with VES by default (from the Workspace security, not the WSM policy), and Summer Associates will be automatically added with “N” rights, even if the remainder of the ACL is modified by users or via API calls.
+
+Since this policy does not have the Set as a Wall property enabled, the ACL can be modified by Cabinet Administrators via the UI or API to alter the security on these documents, however the Summer Associates’ “N” rights would trump those when any member of the Summer Associates group is directly added to the ACL, or a group in which the Summer Associate is also a member would be added.  “N” always wins over any other combinations of security, with the exception of Cabinet Administrators.
+
+This example uses “N” rights as a demonstration of an Exclusionary wall. This feature could be used to apply “global” group rights for administrative or compliance purposes.  By adding groups or users with “VESA” rights, this feature could allow members of “IT Support”, “General Counsel”, “Compliance”, “Records Department”, etc. to have unalterable access to all documents in a workspace, without needing to make those users Cabinet Administrators.
+
+Is this policy set as a wall in the details tab of the policy? No
+Does this policy have persistent security applied to one or more groups? Yes, the policy contains only 1 or more groups that are ALL persistent.
+
+
+
+WSM policy with only Persistent Entities, “Set as a Wall” enabled
+
+In this instance, the WSM policy has only the Summer Associates group defined with N access. This policy does not have “Set as a Wall” is enabled:
+image.png As a result of the policy being applied, since Set as a Wall is enabled, all ACL entries are removed, and Summer Associates with “N” is the only entity left in the ACL.
+
+Given this scenario *ONLY* Cabinet Administrators would be able to access these documents directly.  Since all other ACL rights are stripped from the objects, only Summer Associates with “N” exists in the ACL once the policy gets applied.  To correct this scenario, the WSM policy would need to be updated to disable the “Set as a Wall” flag, and at least one other entity should be added with rights other than “N” to be able to see the documents.  In this case those entities could be persistent, or non-persistent.
+
+
+Is this policy set as a wall in the details tab of the policy? Yes
+Does this policy have persistent security applied to one or more groups? Yes, the policy contains only 1 or more groups that are ALL persistent.
+
+The key takeaway from the above scenarios is that how access is applied varies based on whether or not a policy is set as a wall and whether some or all of the groups in the policy have persistent security. When using persistent security, ensure to familiarize yourself with the scenarios above so you can use the ones that will work best for your organization.
+
+What Will End-Users See When Persistent Security is Present in a Workspace?
+When a policy with a group that has persistent security enabled is applied to a workspace, end-users will see a lock icon next to the group's security level when viewing the workspace's access control list. In the example below you can see the lock icon next to the VESA rights. This group has persistent security applied via WSM:
+image.png
+You will also notice that the checkbox to the left of the group name is grey instead of white. Both the lock icon and the grey checkbox are there to indicate to the user that the group's access cannot be changed.

@@ -1,0 +1,134 @@
+Version Management
+Jul 20, 2023•Knowledge
+Content
+Table of Contents
+
+Overview
+Official vs Latest Version
+Version Management Dialog
+Using Versioning
+Manually Creating Versions
+Automatically Creating Versions
+Overview
+NetDocuments Users are able to create multiple versions of a document. Users with at least View/Edit (VE) rights to a document can open, view, or create new versions of a document. Only a document administrator (VESA rights) may delete individual versions.
+
+
+Official vs Latest Version
+Each document has one version designated as the "official" version or the default version. The most recent version defaults to be the "official" version, but is not required to be the official version. So, the latest version and the official version are not always the same one. If a user opens the document directly from a List View page, the official version is automatically opened for editing rather than the latest. The official version is the "default" version - the version that will be used by default when selecting, opening, downloading, or emailing a document.
+
+A cabinet setting exists that determines the level of access a user needs in order to designate an official version. It either requires A (Administer) or E (Edit) rights to the document.
+
+Version numbers display in two places - in the Details panel and after the document name - as shown below:
+
+Version Management Dialog
+From the Document Details panel of a document, click the "Options..." link under the Versions section. This will open the Versions Dialog window, as shown below.
+
+NOTE: For those using ndOffice, see also our ndOffice Help page to learn more about managing versions in ndOffice.
+
+You can also get to the Versions Dialog box by clicking the "v#" by the document name from either a list or summary view.
+
+From the Version dialog, you can click an individual version number or the item format icon, to open it. You can also hold the Ctrl key down when you select a version to open it in Read-Only mode. If the version has been given a specific version name, you can also click the version name to open that item. V3 and V2 in this picture show versions of the document that have been given specific version names. V1 was not given a version name. Instead, displaying the creator and creation date.
+
+1. Document ID and Name: The document’s unique ID and name.
+2. Add Version: Click here to add a new version or sub-version. Upon clicking this option, a pop-up will appear in which a version name and description may be entered. Using this option will create a copy of whichever version is selected when clicking this button.
+
+3. Email copy: Email a copy of the selected version to other users outside of your cabinet.
+4. Open/Open in: If Microsoft online is enabled for the cabinet of the selected document, this option will read Open in. Clicking this will produce a dropdown in which the user can choose to open the document in MS Office Online or in MS Office desktop. If Microsoft Online is not enabled for that cabinet, the button will simply read Open. In this case, it will open the document in MS Office desktop.
+5. Additional Options: Clicking the ellipsis button will open a dropdown menu containing additional actions that may be taken with the selected version.
+
+Convert to Official Version: Make a version the official version. Only available on documents that are not the official version.
+Copy as a new document – Create a new document from the selected version.
+Delete – Delete the selected version. You must have Administer rights to the document to delete the version.
+Deliver a secured link - Provide a direct access URL for the version. When sharing, an optional password may be set, the version you share may be locked, you may grant or restrict the ability to download the document, and you may also set an automatic expiration date for the URL to expire.
+Download – Download a copy of the selected version(s) to your local PC.
+Email link – Email a link of the document version to other users of the NetDocuments cabinet so they can access it.
+Lock version - Lock the official document version to protect it from editing.
+Modify access – Modify access if you have share rights.
+Revoke link delivery – Revoke all previously delivered links for the selected version and prevent new links from being delivered. Links to other versions of the same document will continue to be valid until expired or revoked. A Links Revoked stamp will be added next to the document name.
+Rename – Rename the version.
+Send to application – Launch a 3rd party software for version comparison.
+6. Version Number: The version number is listed here. This version number always stays the same. For example, if there are 3 versions of a document and version 2 is deleted, the version numbers will still read version 1 and version 3.
+7. Version Status: The version’s status is denoted here. Unless a version is official or has been assigned some other status, this will be blank. The available statuses are Official, Links Revoked, and Locked.
+8. Version Details Pane: When you check the box to the left of the version number, the version details will appear. These details include:
+Version number – The auto assigned version number
+Version name – The user assigned version name
+Created by – The user that created the version
+Extension – The document’s extension
+Created from – Which version of the document the selected version was created from
+Version status – Version status. See number 7 for more details.
+Version description – The version description. The version description may be edited from this pane.
+Different Ways to Use Versioning
+There are two approaches to versioning:
+
+1. Manually creating versions is the most common method as described in this first section. With this method, a new version is created when a user explicitly adds a version either from the browser interface or from within an application using the Office add-ins.
+
+2. The second method allows a user to set a document to automatically create a new version whenever a different person modifies the document. The document will stay in this auto-version mode until the user disables the auto-versioning option. The auto-versioning feature is described in the second section of this help page.
+
+
+Manually Creating Versions
+Designating the Official Version
+Open the Versions Dialog box
+Select a version to designate as the official version
+Click the Make this the official version link
+Click Close
+To Add a Version:
+From the Versions Dialog of a document, click the Add Version option. Note that the third line shows the title of the official version of the document. This is for verification purposes only.
+Enter a version name and a description (optional) for the new version, then select OK. Now you are able to open the new version.
+NetDocuments stores each version name with the document that appears in the Details pane:
+
+Search version names on the Advanced Search page:
+
+When selecting Auto-version, you are not prompted to enter a new version name but you are able to add a version name manually.
+
+Saving as a New Version
+There are multiple ways to save a document as a new version. The option is available from within Word when using the Office Integrations under Save As. It is also available under the Check-In List button at the top right.
+
+Or, from a List View page, the Check In as new version button on the Document Options menu will prompt you to create a new version and then immediately check in the previous version. Alternatively, you can create the new version when you first open the document by using the Check Out as New Version option.
+
+Saving as a Subversion
+Apart from saving a document as a new version, you can now create subversions of the document. For example, version 1 can have 1.1, 1.2, 1.3 subversions.
+
+This feature is available for web, mobile applications, and ndOffice (requires ndOffice 2.7 or higher).
+
+You can make subversions Official and Locked, and perform all the actions that apply to full versions.
+
+To promote a subversion, in the Versions dialog box, select the latest subversion, and then select Make this a full version.
+
+To demote a full version, in the Versions dialog box, select the latest version, and then select Make this a subversion.
+
+Import/Upload New Version
+If you click the Upload Version on the Document Details panel, you can select a local document and import it as a new version of the selected online document. It will be imported as the official version by default. If you have an attachment to an email that you want to save as a new version, this is the best option to use. Just drag the attachment in the email to your Desktop, then use this option to save it as a new version of an existing document in NetDocuments. You can also use the Word Integrations to Save a document as a new version of an existing document.
+
+Using the Send to Application Option from the Versions Dialog to Compare Versions
+Using the Send to Application option two or more versions can be compared using the DeltaView product. Highlight and click the Send to Application option, then highlight another version and click the Send to Application option, then run the DeltaView comparison. You will have the option to save the compared document as a link or as an attachment to your document.
+
+Copying from the Versions Dialog
+Selecting the Copy as new Doc will make a copy of the version that is highlighted and create it as a new document in NetDocuments. It will also copy any custom Profile values that exist for the original document. You can then locate the new copy and rename it if you choose, file it in a different folder and edit the Profile or security of the document. If the original document is filed in a folder, the new document will be automatically filed in that same folder.
+
+Emailing from the Versions Dialog
+From the Versions dialog, a user can choose any of the versions and email them as attached copies outside of NetDocuments. If you are using the Email Integrations, your MAPI-compliant email, such as Outlook will display a Send dialog.
+
+Locking a Version
+If you have at least E rights, you can "lock" a version. This will keep the version from being altered. You can also include a description such as "Sent via Fed Ex". You cannot unlock or delete a locked version. The person with "A" rights to the document can, of course, delete the document if desired.
+
+Version Access
+This feature allows users with appropriate rights to restrict access to individual non-official versions of a document. Document-level security still applies and will govern the document’s visibility in searches and other list views. See the Version Access Restriction article to learn more about how this feature works.
+
+Deleting a Version
+You can delete an individual version of a document. When you do this, the version numbering sequence of the document continues regardless of which version is deleted and regardless of which version is used to create subsequent versions. For example, if you have a document with 3 versions, and you delete version 3, then the next version will be version 4. So, you will have v1, v2, and v4. Similarly, if a document has v1, v2, and v3, and you delete version 2, then the next version will still be version 4, leaving you with v1, v3, and v4.
+
+When you delete a version, it will place this version in the Deleted Items as a new document with a new Doc ID. The Created Date would be the date it was deleted and the Modified Date would be the date the version was created.
+
+
+Automatically Creating Versions
+A user can turn on auto-versioning for a document. Auto-versioning means that new versions will be automatically created when a new user edits the document. For example, if User A edits a document 5 times, only 1 new version will be created. If User B then edits the document multiple times, a single new version will be created. When User A edits the document, a new version will be created.
+
+To set the Auto-versioning option for a document, go to the document's More Options menu and select the Auto Version option.
+
+auto_version
+
+The document will stay in this auto-version mode until the user disables the auto-versioning option.
+
+To disable Auto Versioning, use the same option and select the Disable radio button as shown below:
+
+You can select multiple documents to enable auto-versioning. You can also add this option to the right-click menu if desired.

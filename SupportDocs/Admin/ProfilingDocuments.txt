@@ -1,0 +1,101 @@
+Profiling a Document (i.e., Edit Profile)
+Dec 16, 2021•Knowledge
+Content
+Table of Contents:
+
+Document Profiles
+Completing the Profile of a Document
+Attribute (Profile) Lookup
+Profile Templates
+Link Documents
+Document Profiles
+Every document within NetDocuments has a profile or a set of metadata that is associated with the document. A profile is a simple way to describe a document's attributes and associate it with those attributes for easier identification and searching. For example, every document will always have the following profile boxes:
+
+Name
+Created by
+Modified by
+Type (file extension)
+Size
+ID (document number)
+Version
+A document with multiple versions still has a single profile "card" associated with it. Profile values can be entered for a document either on the Upload Documents page or from any List View. You can also change the profile of an existing document from the Document Details Pane.
+
+Your firm may use custom profile attributes, such as Client, Matter, Project, Account, Document Type, Author, Comments, among others.
+
+To edit the document profile:
+
+Navigate to the List View and select the checkbox to the left of the document name.
+You have three ways to select the Edit profileEdit_Profile_Button.pngbutton:
+in the upper-right corner of the screen;
+select the More button in the upper-right corner of the screen, and then Edit Profile;
+from the right-click menu of the document.
+Edit_profile.png
+
+You will then see the Edit Profile dialog. There are multiple actions a user can take within this dialog:
+
+Document Name - the document name will display here. This field can be used to edit the documents name as well.
+Attribute required - A red asterisk * indicates that the field it is next to is required.
+Profile Template Selector - Use this drop down to select any pre-existing profile templates or to save a new profile template.
+Clear Profile Information - Clicking this button will clear all text from all fields.
+Refresh Profile Information - Clicking this field will repopulate the profile information from before the user started editing.
+Affects Security - the shield icon indicates that changing this field may affect security of the document.
+Selection Required - When a field is outlined in red, it indicates that a required selection has not been filled out.
+Value Selector - Clicking the Ellipses will generate a pick list of profile values for the users to choose from.
+Read Only - Indicates that the field cannot be edited.
+Date Selector - Clicking the dropdown will allow the user to select a date.
+image.png
+
+NOTE: Your profile fields may be named differently based on your organization's needs. This example is based on a traditional Client/Matter structure. Some fields such as Notes or Date may not be present at all, as some organization's choose not to setup those fields.
+
+
+Completing the Profile of a Document
+If your organization requires certain profile attributes to be input, you will see the Edit Profile page appear when a document's profile isn't complete. Some of the values listed above are also shown on this page. The Repository Administrator defines the custom attributes to be used.
+
+In many cases, these boxes are completed automatically, such as when adding a document to a folder in a workspace. In those cases, the values are completed automatically based on the workspace and the folder.
+
+image.png
+
+In the screenshot above, there are two user-defined profile fields. The customer has defined the Client and Matter fields. If you enter the text in these boxes, the document becomes accessible by doing a search performed on those fields.
+
+NOTE: Whenever the custom profiling is available for a cabinet, and one or more attributes require an entry, the Edit Profile dialog appears when the document is created. If you copy the document, the Document Profile modal opens, where you can modify profile information for the new copy.
+
+NOTE: When you select the Modify Access button from the Edit Profile/Tags page when creating a new document, the user cannot remove his/her own access to the document. The save operation must be completed first, then the user could remove themselves from the Access List. This is generally not recommended.
+
+NOTE: When a document has an incomplete profile and is edited by the External user, that user is NOT prompted to complete the profile values.
+
+Attribute (Profile) Lookup
+In the Edit Profile dialog, select the ellipsis button for an attribute, for example, Matter.
+
+image.png
+
+When you open the lookup dialog for the first time, it displays ONLY the values that you have recently used creating new profiles. To see the complete list from the beginning, select the All tab. Then, the first 500 records will be displayed.
+
+You can enter a value in the Search field to find other values. You can use the dropdown located to the left of the search field to search by either what the term begins with or what is contained within the term. You may also sort by Key or Description option to more easily find the value you need.
+
+image.png
+
+Profile Templates
+Each user can save multiple templates of a set of profile values for quicker profile completion. After you have completed a profile, you can select the Save as Template button. This will save those values so they can be used on your future profile.
+
+A template can have a value for some of the boxes or for all of the boxes. Each time you save a template, you give it a reference name by which to select it. The templates that you have saved are shown in the upper-right corner of the Edit Profile dialog.
+
+NOTE: You can save up to 20 templates plus the last profile that you completed during that session.
+
+
+
+For people using workspaces, we recommend that you create a template for yourself, with your name, that contains your Author code and other boxes you have such as Office.
+
+This way, when you create a document, the workspace automatically completes the Client and Matter information and the folders will complete the Document Type box.
+
+Then, you will use the Author template that you created to complete the Author box. Secretaries may create one for each of the attorneys for which they create documents.
+
+For more information, see this page.
+
+Link Documents
+Each document profile can be linked to another document's profile by the document IDs of the related documents. To link documents:
+
+Select the documents you want to link and then select the More button in the upper-right corner of the screen.
+Select Link Documents.
+Link_documents.png
+
+You will be prompted to select OK, and then you will see the list of the linked documents. This will become a hotlink to another linked document for quick access.

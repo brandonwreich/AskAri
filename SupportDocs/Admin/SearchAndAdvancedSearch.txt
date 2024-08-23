@@ -1,0 +1,188 @@
+NetDocuments Search Tips & Tricks
+Oct 6, 2023•Knowledge
+Content
+Table of Contents
+Overview
+What is Quick Search?
+What is an Advanced Search?
+Customize Advanced Search
+Search Refinement
+Search Result Options
+Search Methods and Operators
+Search Fields
+Understanding Search Criteria
+Saved Searches
+Special Searches
+ndOffice Search & Browse Options
+
+Overview
+This article covers the various methods of searching in NetDocuments both in the NetDocuments website as well as in the ndOffice application and how to use them to your advantage in everyday NetDocuments use.
+
+
+What is a Quick Search?
+Quick search can be found at the top of any ndWeb page.
+
+Here, you will enter in search criteria via single word or phrase and press Enter or click the orange magnifying glass button. The Quick Search will use the Primary cabinet that you have designated in Settings unless you click the dropdown arrow on the left-hand side.
+
+image.png
+
+Clicking in the search field itself, just to the right of the dropdown arrow, produces further search options: Search in: Name/Subject [or] Everything and Recent Searches. The Everything radio button is often referred to as a keyword search or All Attributes search. It is primarily used for a broad search for variations of a particular word, phrase, or number found either in the description or within the text of the document.
+image.png
+
+For more narrow or specific searches by metadata (tags), such as Client, Matter, Subject, Author, date, or file type, use the Advanced Search instead.
+
+Clicking within the search field will show your 3 most recent searches. Hovering over a recent search will show a summary of the search criteria, and the option to edit the criteria. Select the search to run it again.
+
+image.png
+
+Clicking the arrow next to Recent Searches will expand to show the 10 most recent searches.
+
+What is an Advanced Search?
+Advanced search can be found at the top of any ndWeb page by clicking the ellipsis (. . .) on the right-hand side of the Quick Search.
+
+image.png
+
+The Advanced Search page defaults to the most recent container (workspace, filter, etc.) as the scope.
+
+image.png
+To clear any previous search criteria, use the Clear fields link at the top (1). Or use CTRL-SHFT – C as a keyboard shortcut to clear the previous search criteria.
+
+Select a page layout (2). This determines the defined display format that will be used on the search results page. The search fields also change to display only relevant fields. For example, selecting Documents will display the Name field, whereas the Email layout will display Subject.
+
+Select the scope of the search by selecting one or more cabinets (3). Use Ctrl + Click to select more than one cabinet.
+
+
+Customize Advanced Search
+By clicking the cog in the upper-right hand corner of the Advanced Search page, you can personalize the page by clicking and dragging the fields / sections into whatever order you see fit.
+image.png
+This gives users the ability to order their most frequently used sections or fields first and save for future use.
+
+image.png
+
+
+Search Refinement
+The Search Results page includes the Search Refinement pane. This pane allows you to select from the available metadata to further refine the original search results regardless where the search originated from (Quick or Advanced). Select a metadata filter to apply it to search results. You can choose one or more filter values.
+image.png
+
+The order of the filters in the Refinement pane is determined by the layout defined on your Advanced Search page. NOTE: There is a limit of 100 metadata entities per attribute filter. The number of metadata entities found in a search is listed to the right of the entity type in parenthesis. For example, in the below screenshot, there are 4 client metadata entities.
+
+image.png
+
+
+Search Result Options
+Search result options can be accessed from any search results page by clicking the words Search Results at the top of the page:
+image.png
+
+Each option functions as follows:
+
+Copy all results - Copy all the items in this search to another cabinet
+
+Delete all results -  Delete all documents in the results page for which you have rights to delete. For Administrators, this option deletes up to 10,000 in a result. (IMPORTANT: Using this option will purge (i.e., permanently delete) all documents deleted using this function. Documents that are purged cannot be recovered from your deleted items container. In addition, deleting items in this way will exclude both folders and CollabSpaces from the deletion process. Edit profiles - Edit the profiles of all the documents in the search results up to 10,000 items
+
+Edit Profiles –  Administrators can edit profiles via dialog window.
+
+Modify all results access - Administrators can modify the access list of all the documents in the search result list up to 10,000 items.
+
+Print List - Print the list of items contained in the search result up to 500. For an Administrator, this option prints up to 10,000 in a result. You receive a list of items by email.
+
+Review - Open the documents in the Review window where you can rename or file in another folder.
+
+Save Search - Save the search results as a Saved Search so it can be easily re-used.
+
+Show criteria - Display the detailed search criteria entered for the shown results.
+
+
+Modify Access, Edit Profile, and Delete options are only available to Cabinet Administrators when searching within a single cabinet.
+
+When searching for documents, the official version will be indicated in the search results.
+
+
+Search Methods and Operators
+Use these search operators to refine your results when you don’t know specific keywords, phrases or criteria for the document you are looking for.
+
+All work with Quick or Advanced searches:
+
+Phrase Search - Use quotation marks " " to search for a phrase (two or more words). Wildcards cannot be used within a phrase.
+
+Exact Search - Use brackets { } to designate an exact search
+
+Proximity Search - you can use the w/ or /  to perform proximity searches. For example, IBM w/4 HP or IBM /4 HP to find IBM within 4 words of HP.
+
+Wildcard Searches * - can be used as a wildcard representing one or more characters when searching a character string. You cannot use multiple wildcard searches in multiple search fields. You can only use wildcards in one search field at a time. If using a wildcard, the wildcard must be preceded or followed by at least two characters.
+
+? - can also used as a wildcard representing a single character. For example, If you’re not sure if you are searching for “Nielson” or “Nielsen” you could search Niels?n to capture both.
+
+Boolean Operators (OR, AND, NOT) - NetDocuments allows Boolean Operators much like many other search engines and they can be used in either the Quick Search or Advanced Search. For example, if I wanted to search for documents that either had the word "Agreement" in the name OR had the word "Jones" in the Created By field, I could run the following search in the Simple Search bar across the top of the page: =3( Agreement ) OR =6( Jones )
+**NOT is not a unitary search operator, meaning it requires two search terms, one on either side.
+
+Lemmatization - This feature will find, for example, mouse when searching mice. (NOTE: Lemmatization is not available unless you click “Show More Options”).
+image.png
+
+
+Search Fields
+Each of the fields shown below has a specific identifier number associated with it. You can use these identifier numbers in the Simple Search bar (top of the page) to perform customized searches.  Here is a list of the identifier numbers and their fields:
+
+3 = document name
+4 = ShareSpace name
+5 = creation date
+6 = creator
+7 = last modified date
+8 = last modifying user
+11 = file extension
+17 = email To field
+18 = email Cc field
+19 = email From field
+20 = Folder
+54 = Checked Out By
+55 = Checked Out Date
+56 = Checked Out
+250 = Email ID
+265 = Documents that have been OCR'd by NetDocuments*
+999 = Doc ID
+
+image.png
+
+1000+ = custom profile fields (1000 + Field ID (1001, 1002, 1003, etc.) )
+
+For example, to search the word "Agreement" in the Name field the search would look like this: =3( Agreement )
+
+*Typing =265({*}) into the simple search bar will only return results for documents that have been OCR'd by the in house NetDocuments OCR feature that was enabled in August of 2021. This does not include documents that were OCR'd by other OCR systems or NetDocuments' previous integration with DocsCorp.
+
+
+Understanding Search Criteria
+After executing either an Advanced or Quick search, you can see the results of the search (see left for example Advanced search), you can click the Search Results drop down at the top-middle of the page and click the Show Criteria option.
+image.png
+
+The resulting search criteria can be broken down as follows:
+image.png
+As you can see, this search is returning all items except email messages, Saved Searches, and folders that were created by James in the past 14 days*, that have Matthew as the Author.
+
+image.png
+
+*In the Created and Last Modified Date fields you can enter dates in a mm/dd/yyyy format, but you can also use the minus symbol ( - ) to perform a relative date search.
+
+
+Saved Searches
+After you have run the search that you want (Quick or Advanced), from the Search Results page you can click the Search Results drop down at the top of the page and click the Save Search option.
+image.png
+
+You will be asked to name the Saved Search and file it in a folder or workspace, much like a standard document.
+
+Once you have saved the search, it will show up in the folder much like any other document, but it will have a unique icon that looks like a red folder with a magnifying glass on it.
+
+When you open the Saved Search, it will dynamically display the items that match the criteria of the custom search. If a document is added or modified in a way that causes it to match the criteria of the search, it will automatically be displayed when you open the Saved Search.
+
+image.png
+
+
+Special Searches
+On the Advanced Search page, you will have a Search Options menu. This includes the following options:
+image.png
+
+Emails from Me - Will do a search for all .msg files sent by the logged in user
+Emails to Me - Will do a search for all .msg files sent to the logged in user
+My recently created docs - A canned search that shows the documents you have created in the last 14 days.  You can always do a manual search with a different date range.
+Unprofiled Documents - Shows all documents that you have created where required profile values have not been entered. Generally, this would be done for each person's own documents to assist them in completing the profiles.
+
+ndOffice Search & Browse Options
+You can search & browse documents directly from your desktop, without having to go to ndWeb.  In any Microsoft Product, simply click FILE > OPEN > ND Open

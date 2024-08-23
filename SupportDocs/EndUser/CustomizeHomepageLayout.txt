@@ -1,0 +1,64 @@
+Editing Your Home Page
+Mar 11, 2024•Knowledge
+Content
+Favorite Items and Favorite Workspaces
+Custom Sections
+Organizing Your Home Page
+Add Multiple Items to Home Page
+The Home Page is a landing place where you can place links to frequently used documents and items.
+
+There are two default sections on a Home Page: Favorite Items and Favorite Workspaces (if your cabinet uses workspaces).
+
+
+Favorite Items and Favorite Workspaces
+You can add items to the Home Page by clicking the open star icon next to the document/item name. This action will fill the star. A filled star indicates that a link to the document or item has been placed on your Home Page.
+
+When you favorite an item, it is placed at the top of the Favorite Items or Favorite Workspaces section.
+
+Note: While you can favorite up to 350 workspaces, the Favorite Workspaces section can only display up to 15. A full list of workspaces that you have favorited can be found on the Favorite Workspace page which can be accessed from the top of every page in NetDocuments:
+
+Custom Sections
+You can create custom sections on your Home Page to further organize your favorite items. Select the drop-down icon next to Home and choose Edit Layout.
+
+This will display the Edit Home page.
+
+As noted, the Favorite Items and Favorite Workspaces sections are created automatically.
+
+To create a custom section for your favorites, enter a new section name in the box at the bottom of the page, and select Add.
+
+This action will create a new section. You can drag the sections to any columns and place them above or below existing sections within a column.
+
+Select Save Changes to return to the Home Page.
+
+Organizing Your Home Page
+Items can be dragged within sections and between sections on the Home Page.
+
+To move an item within a section, drag the item up or down within the section and drop it in the desired location.
+
+To move an item to a different section, drag the item to the new section and drop it in the desired location.
+
+Items in custom sections can be alphabetized by clicking on the section name (each click changes to ascending or descending order).
+
+Removing a Document, Folder, or Saved Search Shortcuts from Your Home Page
+To remove an item from your Home Page, click the filled star next to the document/item which will clear the star. This can be done from the item's location or the Home Page. When you unfavorite the item while on the Home Page, it remains available until you refresh the page or navigate to another page.
+
+Hover Options
+
+When you hover over an item, a menu icon appears to the right of the name. Select the icon to view the options available for that item.
+
+You can also right-click the star icon on any page and the Add to dropdown appears, where you can specify the location.
+
+Add Multiple Items to Home Page
+Now, you can add multiple items to a Home Page in one step instead of individually.
+
+To add multiple items in one step, do the following:
+
+From a list view, select more than one item in the list and then right-click the star of one of the selected items.
+
+Select where you want to add these items, either to a Home Page or a delegated Home Page.
+
+Select the section to add the items, and then select the Add button.
+
+Now, the selected items are on your Home Page.
+
+Here, you can learn about the Delegate Home Page Access features.

@@ -1,0 +1,115 @@
+Content
+There are several ways to add or create new documents, including:
+
+1) Create a new document directly from within NetDocuments.
+
+2) Upload an existing document or email.
+
+3) Use ndOffice to save a document from the MS Office Suite in to NetDocuments (for PC users only). Learn More.
+
+Creating a New Document
+To create a new document:
+
+From any page, click on the Add > Blank Document drop-down menu.
+
+Type a Document name.
+
+Select a Document format (a blank document such as Word or Excel, discussion , link/URL, paper document, OR scanned image).
+
+Choose a cabinet wherein to store the document.
+
+Select where to File the document (folder, workspace, or CollabSpace).
+
+Click OK.
+
+image.png
+
+Based on the document format you selected, that application will be launched automatically. You can begin editing your new blank document with the name you designated. When finished editing, save your document and close the application. You will return to the Document Profile page in the browser. From there you can choose from a number of document options, or close the Profile to work on something else.
+
+Online Editor (Web apps)
+There is an option to choose an "online editor". If you choose this option, you will be taken to Microsoft Office Online to create your document. This option is also available on the right click menu to open existing documents using Office Online. Learn More.
+
+Creating a new Folder on the fly when Adding a document
+When adding a document, if you choose to add a new folder, you will be asked to enter profile values for the folder.
+
+image.png
+
+Completing the Profile
+If you have required custom profile fields which have not been completed from this page, you will be prompted to complete them. Generally required profile attributes will have validation tables from which to select a value. If the list of values is less than 100, you will see a standard dropdown box. If the profile attribute has values greater than 100, then you will see a selection box to the right of the entry field. After selecting that option, you can search either on a key or a description, if both were entered. You will see a maximum of 500 entries at a time, but can "next" through the values until you find the one you want to select.
+
+NOTE: External Users – External users are NOT required to complete a profile value that you have defined to be required. The requirement only applies to Internal Users.
+
+Profile Inheritance
+
+If you are adding the new document into a folder, the document will always inherit any profile values which have been completed for the folder.
+
+Access Inheritance
+Your Cabinet Administrator can choose to set the flag called "Inherit Access Rights from Folders", which means that any time a document is filed in a folder, it will inherit the same Access Rights as the folder.  This setting overrides any default that may have been set for the Cabinet security. This setting will also override any Profile-based Security which may be defined. This flag is set by default if your Repository was initially defined to encourage the usage of Folders. If the flag is set, the following behavior occurs: When access rights inheritance is enabled and a new document is created in or imported into a folder, the access list of the new item is set to match the access list of the folder plus grant the current user VESA rights. Cabinet default security is ignored in this case.
+
+Note that if profile-based security is enabled and the user subsequently fills out a profile for the new item, the access list may be changed so that it no longer matches the folder access list. When access rights inheritance is enabled, existing documents can only be filed by users who have A rights to those items.  During filing, the access lists of the items are changed to match the access list of the folder plus the current user’s rights remain as is.
+
+Profile Template
+If you have defined profile templates, they will be displayed across the bottom of the page as shown in the above example. The best way to define these templates is to start the creation of a new Folder or subfolder and then complete just the profile value that you want for the template. Then save that as a template, naming it whatever you choose. We suggest that if you are using an Author custom profile value, that you create a template with just that value. Then when you are creating a new document in a workspace, you can apply the Author by selecting the Profile Template. Also by filing it into a folder, it will inherit the client and matter from the workspace, the Document Type from the folder, and then the Author value would have been set by clicking your Author profile template. For most law firms, this would complete all of the custom profile values and when you click OK, you would not have to visit the Edit Profile page.
+
+NOTE: Documents have a maximum name length of 1000 characters.
+
+NOTE: Documents larger than 2 GB cannot be stored in NetDocuments.
+
+When using the Folder Import Utility the limit is also 1 GB. For EMS the maximum limit is approximately 20MB per email message.
+
+If you are importing a document using the Upload option that is larger than 100 MB and you do other things with your computer during the upload, the upload may not succeed depending on your computer specs and Internet connection speed. When uploading larger documents, we suggest that you do not do anything else with your computer during the upload process.
+
+NOTE: In order to prevent potential malicious activity with the service the following file types cannot be imported into NetDocuments: exe, com, bat, js, vbs, pif, cmd, dll, ocx, and pwl.
+
+Uploading Documents From Your Desktop
+Use this option to upload documents from your desktop. If you are using folders, we recommend that you open the folder first and then import the documents into it.
+
+1) Click Add > Upload in the top right corner of any page in NetDocuments
+
+2) The Browse page for your computer will appear allowing you to select the documents you want to import. Select the documents
+
+3) Click Open. If you want to select additional documents, click the Select Documents link. Use the Shift or the Control buttons to select multiple documents. Use Ctrl+A to select all documents in a specific folder at one time.
+
+4) Repeat steps 2 and 3 as many times as you want to select documents from other folders. Use the Remove option, if you want to remove a document from your selection.
+
+5) When you have selected your desired documents, choose Move or Copy, to move the document or make a copy of it to import into NetDocuments.
+
+NOTE: We highly recommend you use Copy. Move is the default, but it leaves NO copy on your computer, if for whatever reason the Upload fails. While in a session, if the default is changed, it retains that selection. If you are an External user, the default will always be to Copy the first time you use it in a session.
+
+6) Proceed by selecting OK or Edit Profile/Tags to finish the upload process. Once your documents have been successfully uploaded, you will be brought to a page with all the successfully uploaded documents.
+
+This option has a maximum limit of 150 documents per import. You can repeat this process as many times as you like. To import more documents at one time, use the Auto Import option or the Folder Import Tool.
+
+msg and eml files cannot be uploaded together with other file types. If importing a mixed batch, separate the email messages from other file types. This is because NetDocuments will parse the emails' headers to extract information such as the Sent By and To fields, and NetDocuments will process these messages together when importing them.
+
+
+Drag and Drop
+You can also drag and drop files into the Import window. This feature is only available when using our ndClick (or ndOffice 3.0+) application. You can also drag and drop directly to a folder or filter.
+
+NOTE: Local folders cannot be selected with the Upload button.
+
+2) Select the cabinet and cabinet folder or workspace where you want to store the documents. This information will default if you are adding from the folder.
+
+3) Select your profile template if you want to automatically apply custom profile values.
+
+4) Choose Move or Copy, to move the document or make a copy of it to import into NetDocuments.
+
+NOTE: We highly recommend you use Copy. Move is the default, but it leaves NO copy on your computer, if for whatever reason the Upload fails. While in a session, if the default is changed, it retains that selection. If you are an External user, the default will always be to Copy the first time you use it in a session.
+
+5) Click OK. The document(s) will be imported into NetDocuments.
+
+You can also drag and drop directly into a folder or filter. Select the file from your computer and simply drag it to the top of the folder or filter list to do so. After dropping the file in, the import process will begin.
+
+NOTE: When drag and drop is used, the Move option will not be able to remove documents from your computer. This is because dragging and dropping bypasses the Windows file picker and thus our ability to work with Windows on file permissions to even check if we are able to Move rather than Copy.
+
+NOTE: If you are importing the document into a folder, the document will inherit any custom profile values which have been completed for that folder.
+
+image.png
+
+Also, your Administrator may have set the cabinet-level flag for documents to inherit their access from the folder. In this case, it will override any cabinet-level or profile-based security which may have been defined. With that flag, the following behavior occurs:
+
+When "access rights inheritance" is enabled and a new standalone item is created in or imported into a folder, the access list of the new item is set to match the access list of the folder plus the current user is granted VESA rights. Cabinet default security is ignored in this case. Note that if profile-based security is enabled and the user subsequently fills out a profile for a new document, the access list may be changed so that it no longer matches the folder access list.
+
+The person logged into NetDocuments is stamped as the Created by and the Modified by person of the document when it is imported.
+
+NOTE: The following file types cannot be imported into NetDocuments to prevent potential malicious activity with the service: exe, com, bat, js, vbs, pif, cmd, dll, ocx, and pwl.

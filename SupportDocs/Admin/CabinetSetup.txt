@@ -1,0 +1,202 @@
+Cabinet Administration Overview
+
+Table of Contents:
+- What is a cabinet
+- Use of cabinets
+- Cabinet Administration Page
+- Cabinet Name, Logo, and Description
+- Calculating Cabinet Storage, and Archival Cabinets
+- Cabinet Security and Access
+- Designating Cabinet Administrators
+- Configure Document Profile Attributes
+- Define Workspace Templates
+- Designate Echo Settings
+- Email Management
+- Incoming Email
+- Outgoing Email
+- Versioning
+- Foldering and Filing Options
+- ShareSpace Migration
+- Other Settings
+
+What is a Cabinet?
+A Cabinet is used for common access to an organized and managed document repository. For example, all of your employees may need access to this common, secured repository, just as they might with a shared drive on a LAN. Whenever a member of the Cabinet logs into NetDocuments, that user will see the Cabinet and all documents he or she has access to within the Cabinet, either through a search, workspaces, or folders.
+
+Use of Cabinets
+NetDocuments Basic account includes one shared Cabinet by default. Customers may purchase the Professional Edition and have ability to create additional shared Cabinets as necessary from the Repository Administration page. Cabinets can be used to securely manage different types of documents in a firm. There may be a Client Documents Cabinet, a Management or Admin Cabinet, and a Human Resources Cabinet. Some organizations may choose to create a Cabinet for an extranet purpose which is designated for an important client where the client is also a member of that Cabinet for common access to documents on an ongoing basis.
+
+Cabinet Administration Page
+This page contains all of the available settings for a cabinet, to be defined by the Cabinet Administrator(s). Each section is described as follows:
+
+Cabinet Descriptors, Language, Indexing, and Storage
+Cabinet Name and Description: The Cabinet name and logo (logo setting located at the bottom of the above screenshot) are the identities of an organization's Cabinet. Both the Cabinet name and logo can be changed at any time by a Cabinet Administrator. If a Repository logo has been loaded previously by the Repository Administrator, the Cabinet Administrator can select to display the default repository logo by simply clearing the Display cabinet logo check box. If the Cabinet will be used for such purposes as a client extranet, your firm may wish to upload a logo specific to the Cabinet. A Cabinet logo appears throughout all folder navigation pages of the Cabinet.
+
+The Cabinet Description appears at the top of the Cabinet Page as shown in the screenshot below.
+
+The description is created and managed by the Cabinet Administrator and is visible for all users who have access to the Cabinet. It could be used as a description of the cabinet or instructions on how to use the cabinet or what types of documents to put in the cabinet, etc. Any URLs, email addresses, or UNC paths entered will become clickable links.
+
+Default Display Language: The language NetDocuments will be displayed in for users when utilizing NetDocuments.
+
+Search: Selecting Profiles Only will allow users to search all documents' profile attributes such as name, modified by, modified date, created by, created date, custom profile attributes, etc. The document's content (i.e., that text that makes up the document) cannot be searched, however.
+
+If Profiles and Content is selected, everything in Profiles Only is included as well as the content of the official version of the document.
+
+Default Indexing Language: The language for which the content of documents will be indexed by default.
+
+Calculating Cabinet Storage and Archival Cabinets
+Cabinet Types - The cabinet type corresponds the Storage Type setting above. Each Cabinet created can be either a standard "Active" cabinet or an "Archival" cabinet. The Repository Administrator can define a new cabinet as Editable or Archival. The default is Editable. The differences are as follows:
+
+Editable Cabinet - A cabinet with all standard options. These include the ability to edit documents and utilize the various options related to those documents and have full-text indexing of documents.
+
+Archival Cabinet - A cabinet that restricts the editing or deleting of documents. These cabinets are to be used to store inactive, non-changeable older documents or to provide an environment where the requirement is to ensure documents cannot be changed for legal purposes.  Documents can be added to this cabinet either by moving them from an Active cabinet or by importing documents in various ways. This feature provides non-rewriteable, non-erasable storage as required by SEC rule 17a-4.
+
+On the Cabinet Administration page of an existing archival cabinet, the cabinet’s storage type cannot be changed.
+
+When an existing cabinet’s storage type is changed from Editable to Archival and the user clicks the Submit button, an on-page dialog displays with an entry field, OK and Cancel buttons, and the following text:
+
+Confirm conversion of this cabinet to archival storage by typing the word “archive” below and clicking the OK button. This will make all documents in the cabinet non-editable and non-deletable except via the repository’s document retention policies.
+
+If the Administrator enters “archive” (not case-sensitive) into the entry field and clicks OK, the changes are saved and the cabinet becomes an Archival cabinet. This confirmation procedure is not necessary when a new cabinet is designated as an Archival cabinet.
+
+IMPORTANT: The archival setting can take up to 24 hours to apply. Until the time that the setting is fully applied, the cabinet remains a storage cabinet.
+
+Documents in archival cabinets can NOT be edited regardless of their access. When opened, they open in read-only mode in the application. Places that display the reasons a document is read-only (such as the Info dialog) will indicate that the document is read-only because it has been archived.
+
+Documents in Archival cabinets can NOT be checked out, renamed, moved to another cabinet, moved to a CollabSpace, or moved from a Collabspace, even by cabinet administrators. They can NOT appear as the source or destination for an Append Versions operation. They can NOT have versions added or removed, and the official version can NOT be changed.
+
+Documents in Archival cabinets can NOT be deleted except via repository document retention policies. These restrictions do NOT apply to folders and Saved Searches in Archival cabinets, meaning folders and Saved Searches CAN be deleted, but their contents cannot be deleted.
+
+When editing profiles of existing documents in archival cabinets, notes-type fields are editable by anyone with E rights. Other fields can be modified if they are empty but not if they already contain a value. During the process of importing or creating a new document profile values inherited from folders or profile templates CAN be changed.
+
+Documents in archival cabinets CAN have their access changed.
+
+Cabinet Storage – click on Calculate to display all storage capacity used in the Cabinet. NetDocuments also tracks this amount for billing purposes.
+
+Deleting a Cabinet  - Learn about Deleting Cabinets.
+
+Disabling a Cabinet - If allowed by a repository administrator, a cabinet administrator can disable or hide the cabinet from end-users. This allows the administrator to configure the cabinet, but not allow others to see it until it is ready.
+
+NOTE: If this option has not been allowed by a Repository Administrator the option to Disable a cabinet will not show on this page. Click here to see how a Repository Administrator can give Cabinet Administrators the option to disable cabinets.
+
+Cabinet Security and Access
+Learn about the Cabinet Access and security options.
+
+Designating Cabinet Administrators
+Learn about Cabinet Administrators and other Admin options.
+
+Configurable Document Profile Attributes
+If custom document Profile attributes are defined at the Repository Administration level, these attributes will appear in this section. By default, they are inactive for the Cabinet. The Cabinet Administrator can designate any or all of the Custom Profile Attributes to be active for this cabinet. Only those Custom Attributes checked will appear in documents in this cabinet. The remaining Custom Attributes will not exist in this cabinet.
+
+Default Profiling for Documents and setting for the multi-document Profile Edit option
+
+
+
+Profile defaulting – A Cabinet Administrator can turn on the default profiling option so that users do not need to re-key redundant information when profiling documents. A Cabinet Administrator can optionally select one key field, from which the other fields will default.
+
+For example, suppose there are four custom fields in a Cabinet: Author, Client, Matter, Office, and Author is used as the key defaulting field. Now suppose "John Doe" is selected from the Author lookup field. That now becomes the key defaulting value. The next time that "John Doe" is selected from the Author field, the other fields will be completed with the information used for the previous document where "John Doe" was the Author. The profile values will be populated when the user selects 'validate' or 'OK.'
+
+However, this often leads users to be careless in how they profile documents. To default only one value from another, rather than the entire profile card, it is better to configure profile defaulting on the attribute level.
+
+Force Users to Profile – you can choose a setting to either Always force Internal Users with A rights to profile documents or just have them profile new documents or not force them at all. To set it on only new documents is generally used after a conversion from an existing document structure where not all of the Required Profile values were entered during the conversion. Note that External Users are not required to complete profile values.
+
+Define Workspace Template(s)
+This option is found at the top-left of the Cabinet Admin page. In order to set up workspaces, a workspace template needs to be created. Learn more about Workspace Templates.
+
+Designating Echo Settings for Cabinets
+Learn how to configure Echoing at the cabinet level.
+
+Email Management
+The Email Management section governs how users experience certain aspects of any NetDocuments app that interacts with email applications.
+Default profile values for messages . . .: If this section contains customized default profile values for email messages, ndOffice and ndMail will use those. For example, if there is a profile value for Doc Type and Author, a profile value like Email could be specified. This way, if a user files into the top level of a workspace without specifying a filter, the Doc Type and Author values can be automatically specified when they are not inherited from the selected container. When default profile values are specified, a user can simply select the workspace to file to, and ndOffice and ndMail will provide the profiled values set  for in the cabinet.
+
+Select attributes EMS Profiler should prompt for: This setting is part of a product that is no longer supported. This section can be disregarded.
+
+Select the container types where filing with ndMail is allowed: Select whether or not your organization can file into Workspaces, Filters, Folders or a combination of the three.
+
+
+Allow users to apply profile attributes on ndMail Browse dialog: When enabled, this option will give users the opportunity to use the browse dialog to input additional profile attributes beyond what is already inherited from the container.
+When set to Off there is no change.
+When set to On, users will see that when they open the Browse Dialog (by clicking the browse icon in the predictions panel) they now have the option to select a location and add additional attributes that aren't inherited from the desired location. (See example below where user may "Click to edit")
+If On and Force is selected, the above behavior applies and the user will be forced to enter any required attributes when filing via the browse dialog. (See example below highlighted in red.)
+
+Local Document Service
+Here you will enter the IP address of the server hosting your ndMirror instance. You should install and configure ndMirror before entering the server address here. Learn more about ndMirror.
+
+Email Settings
+Cabinet Administrators have several options to manage incoming and outgoing emails.
+
+Incoming email
+The following settings are available:
+
+Allow anyone to email documents into this cabinet
+Allow external and internal cabinet members to email into this cabinet
+Allow internal cabinet members to email into this cabinet
+Allow no one to email into this cabinet
+With the 21.14 Web Release, you can specify whether the word "Email - " should be added as a prefix to the Subject of email messages that are emailed to a destination email address in NetDocuments (for example, emailed into a folder).
+
+NOTE: The default setting is not to add this prefix to email subject lines.
+
+Cabinet Administrators can change this by selecting the Add the word "Email - " to the beginning of incoming email messages checkbox.
+
+Versioning
+Use full versions or sub-versions
+Use full version numbers: When used, versions will be full numbers with no sub-versions.
+Use sub-version numbers: Allows full versions to have multiple sub-versions of a document (e.g., v 1.1, 1.2, 1.3)
+To enable sub-versions for a cabinet, go to the Versioning section, and select Use subversion numbers > Submit.
+
+Versioning.jpg
+Note: If sub-versions are enabled, users will be prompted to name new versions when checking out a document as a new version as well as checking in a document with auto-versioning. (If the person checking the document in was the last person to edit the previous version, the user will not be prompted to enter a version name.)
+
+Prompt for version name: When set to yes, this option will prompt users to enter a version name in two scenarios: 1. If auto-versioning is enabled on a document, the user will be prompted to enter a version name when the document is checked in. Note: If the person checking the document in was the last person to edit the previous version, the user will not be prompted to enter a version name. 2. When checking out a document as a new version.
+Warn when version is not the latest: When set to Yes, if a user opens a document version that is not the latest version from the NdOffice Activity Center specifically, the user will be warned and ask how they would like to proceed.
+Editable document versions: If All is selected, all versions of a document can be edited. If Official and latest versions only is selected, only the official and the latest versions can be edited. All other versions will open as read only.
+Rights required to modify version descriptions and designate official version: Specifies what level of access a NetDocuments user needs to be able to modify a document’s version description or designate a document version as official.
+Outgoing email
+Cabinet administrators can define one of the methods that their users can use to send documents and links, including secure delivery links. There are such options:
+
+User setting (default)—the end-user can control how emails go out (either via their desktop client or via the web-based ND email editor).
+NetDocuments—this option requires any document being sent from this cabinet to be sent using the web-based ND email editor.
+Email client—requires any document being sent from this cabinet to be sent using the user's Desktop Email Integration.
+
+These settings apply to all emails leaving the cabinet, for example when documents are sent via the Email Link or Email Copy options.
+
+Email Footer—if your firm would like a legal disclaimer or any other information to be appended to emails generated from a Cabinet, such as Notifications and Alerts, or emailing copies of documents, you can enter that information in this area.
+
+Example of a legal disclaimer:  This message is sent by a law firm and may contain information that is privileged or confidential. If you received this transmission in error, please notify the sender by reply e-mail and delete the message and any attachments. For additional information, please visit our website at www.xyzcorp.com.
+Attachment naming pattern—determine how the document name appears when it is emailed as an attachment and what the email subject is. You can choose the name, ID, version number, subversion number, and version name. For example, if you want email attachments and email subject to include the document name followed by the version number with a period separating them, use: %n.%v
+
+NOTE: If you use version number (%v), the subversion will not be indicated in the attachment name. For example, if the user attaches Version 1.3, the attachment name will be Version 1.
+
+Foldering and Filing options
+These options determine how documents and emails are organized and filed, using either workspaces or folder. Learn more about Cabinet Filing Options.
+
+
+ShareSpace Migration
+This section governs the settings for the ShareSpace migration tool. ShareSpaces will officially reach their end of life date on July 18 2024. This tool has been created to assist organizations with migrating all documents out of ShareSpaces before that date. Click here to learn more about these settings and what they do.
+
+
+Other
+This section contains various settings.
+
+Rights required to customize workspace layout – Select Admin to allow only users with A rights to a document to change a workspace look.
+Select VES to allow users with View, Access, Share rights to a workspace to customize the layout.
+Select Cabinet Admin to allow only cabinet administrators to change a workspace look.
+Show SmartView Preview on All Information: Gives Administrators the option to hide the document preview that appears by default when the All Information pop-up is used. There are 3 options:
+Show for all users - Shows the preview from All information for all users. This is the default setting.
+Hide for all users- Hides the preview from All information for all users.
+Hide for admins only- Hides the preview from All information only for admins.
+Store document comparisons as – This option is for users of Workshare (DeltaView). For this cabinet, define if you want the redline comparisons to be stored as a document attached to the source document or if you want the Comparison document to be created as an independent one linked to the source document. If you select Document Attachments, you can only retain one comparison per document. When a new comparison is created, it will automatically overwrite the first attachment. If you select Linked documents, you can retain as many redline comparisons as you choose.
+Allow online editor – Enable or disable the Online Editor (Office Online). If disabled, users will not see the Open In > Microsoft Online option for documents residing in that cabinet. Learn more about Microsoft Office 365 for NetDocuments.
+Automatically freeze ACL when manually changed – Enable ACL freeze when users change it manually.
+Allow users to freeze ACL – Allow users to set a flag on a document or email that freezes the item's access list from implicit changes. Learn more about ACL Freeze.
+Allow VESA users to lock documents – Enable or disable document locking for users.
+Permanently remove purged documents – Select After 30 days (the default option), and document snapshots are kept for 30 days after being purged. Purged items can only be recovered from the Rollback page, using the Document ID.
+Select Immediately, and when a document is purged, all metadata and snapshots of that document are immediately purged also. (This is used for protective orders that require document destruction within a specified time frame).
+NOTE: Deleting a cabinet will not respect this flag. If you want to purge all items immediately, then delete the items first, before deleting the cabinet.
+
+Previewer - All customers should enable SmartView on their cabinets to continue previewing content in the browser because our legacy viewer will cease to work with the discontinuation of Internet Explorer support. Learn more about SmartView.
+Default ndFlexStore location: Select the default location documents stored with FlexStore should be stored to.
+Select the Internal Group that can view Workspace Analytics: The group selected here can see workspace analytics within NetDocument. Limited to one group.
+Enable Docusign Integration: Check this to Enable the DocuSign integration. (Requires DocuSign subscription)
+Require ndClick for internal users - If a user logs on to the NetDocuments web service without having ndClick (or ndOffice 3.0 or later) running and their administrator enables the Require ndClick for Internal Users checkbox then the user will now be warned that ndClick is not running at the time they log into the web. They will also be prevented from taking certain actions within the web service until ndClick is detected as running. For example, if this setting is enabled in a cabinet but a user is on a machine that is not running ndClick (or ndOffice 3.0+), checking documents in and out will need to be done manually. In addition, other features managed by ndClick/ndOffice 3.0+ will not be available.
+Allow NetDocuments-based "Sign a Document" feature - Administrators can now disable the legacy "Sign a Document" feature for their end-users which has been NetDocuments long-standing method of adding a NetDocuments-signed digital signature to a document. Now, as electronic signatures are widespread, the legacy digital signature function is seldom used. *To disable this feature, clear the Allow NetDocuments-based "Sign a Document" feature checkbox and select the Submit button. NOTE: With this disabled, any existing digitally signed documents will retain their signatures but users will not see the option to add these legacy digital signatures to any documents in the cabinet.

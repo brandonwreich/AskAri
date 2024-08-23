@@ -1,0 +1,169 @@
+Security (Access) Basics
+Mar 3, 2022•Knowledge
+Content
+General Overview
+
+Users can access documents based on the rights granted to them per cabinet, folder, or document. Access rights may be set on each of these items:
+
+Cabinet
+CollabSpace
+Document (may be set individually for each individual document)
+Folders
+Workspaces
+Profile attribute values
+Refer to our Security Made Simple document for more information.
+
+Cabinets
+The Cabinet Administrator controls the documents in the cabinet and grants a certain level of access to each User Group based on the User Group's specific needs.
+
+CollabSpaces
+Upon creating a CollabSpace, the user who created the CollabSpace will be given the opportunity to set the CollabSpace user access. By default, the cabinet's Default Access is placed on the access list but can be removed if needed. Documents in CollabSpaces will inherit the creator defined CollabSpace access list. However, singular documents and folders within a CollabSpace can be edited to remove or add user's access where necessary. After rights on the collabSpace are set, the user will be able to interact with documents according to the rights defined in the Security Attributes Defined section of this article.
+
+Documents
+Document-level security can only be set by someone in a cabinet who has "Administer" rights to that document. The creator of a document in a cabinet has "Administer" rights unless they are relinquished.
+
+Folders
+Folders will inherit the default access set at the cabinet level, similar to documents. Cabinet administrators can also enable Folder Access Inheritance which means any document placed into a folder will inherit the folder's access. See below for more information about Access Inheritance.
+
+Workspaces
+By default, a workspace will inherit the rights from the cabinet or if profile-based security (PBS) is used, the rights will come from the access column on the lookup table.  Since a Workspace is created by the service and not an individual, no one user is given VESA rights to a Workspace automatically, as when a document is created.
+
+Editing User Rights
+Each document, folder, Saved Search, etc. has an Access List which defines who can view and edit the item.
+
+Learn more about Modifying the Access List of a Document or Folder
+
+Users need to have "A" or Administer rights to a document, Saved Search, or CollabSpace in order to change the Access List of that item. Also, a user with Share (S) rights can add another user to the Access List up to the same rights as that user has, but cannot remove anyone from the list or modify existing users' access including any that they have added.
+
+A user may apply one of six security attribute combinations to a document, Saved Search, folder, CollabSpace, etc:
+
+VESA – view, edit, share, and administer
+VES – view, edit, share
+VE – view, edit
+VS – view, share
+V – view
+N - No Access
+Rules of Security
+
+Cabinet Administrators Get "VSA" Rights
+
+When a Repository Administrator appoints a user as a Cabinet Administrator, that user is given implicit View, Share, Administer (VSA) rights to all items in the Cabinet.
+
+Rights are Cumulative
+
+If you are a member of a User Group that has V rights in a Cabinet, and you are a member of another User Group that has VES rights in the same Cabinet, your actual default access to the Cabinet is VES. Now suppose that, as a member of the "Sales" user group, Frank has VS rights to the Marketing Cabinet. In addition, as a member of the "Design Committee" user group, he has VE rights to the same Cabinet. Though VE rights are "higher" than VS, Frank does not lose his Share rights to the Marketing Cabinet. Instead, his VE rights are added to his VS rights, giving Frank VES rights to the Marketing Cabinet.
+
+NOTE: There is an exception to the cumulative rights concept. When a user's access level has been set to "No Access" the user's default rights as a user group member do not apply to that document.
+
+Security Attributes Defined
+Access	Symbol	Access Description
+  View	    V
+A user can:
+
+View a document, folder, Saved Search, discussion, workspace etc. in a Cabinet or CollabSpace either in the application or with the Viewer.
+
+Download a copy of a document.
+
+Can add documents to a cabinet.
+
+A user cannot:
+
+Edit a document or document's profile.
+
+Place items into a folder.
+
+An External User who has View only rights to a document cannot make a Copy of a document, or Email a copy of a document from NetDocuments
+
+An External User can use the Email Link option to send a link to others who have access to the document unless the Cabinet flag to not allow this has been set by the Cabinet Administrator.
+
+  Edit	    E
+A user can:
+
+Modify the contents of documents in a Cabinet.
+
+Create or modify versions of a document.
+
+Edit a document's profile including renaming the document.
+
+Add new documents (not subfolders) into a folder.
+
+Remove (unfile) documents from a folder.
+
+Add a Saved Search
+
+A user cannot:
+
+Rename a folder.
+
+Create a subfolder.
+
+An External user has to have Edit AND Share to view the History of a CollabSpace or a document.
+
+  Share	    S
+A user can:
+
+Share a document in a Cabinet with other users of the Cabinet. This means that with Share rights you can add other users but cannot remove anyone from the list or modify existing users' access including any that they have added.
+
+Share a CollabSpace with other users (inside or outside of the cabinet).
+
+Add users to the access list up to but not exceeding your own access.
+
+A user has to have Edit and Share rights to a folder to create a subfolder.
+
+An External user with Edit and Share rights can see the History of a document CollabSpace.
+
+An External User needs Share rights to see the Access List.
+
+  Administer	    A
+A user can:
+
+Delete a document, CollabSpace or a folder.
+
+Delete a version of a document.
+
+Force the check-in of a document.
+
+Add people to the Access List
+
+Change the rights of users already in the Access List
+
+Remove other users from the Access List of a document, Workspace or a CollabSpace.
+
+Rename a folder
+
+  No Access	    N
+A user cannot:
+
+view a document, CollabSpace or folder, etc.
+
+This means one user may see several documents in a folder while another user may see only one or no documents in the same folder depending on their rights.  (The exception, of course, is for Cabinet Administrators; they have VSA access to everything.)
+
+
+NOTE: All Internal Users who have at least View (V) rights to a Cabinet also have the right to add and import documents to that Cabinet. If you add a document or other item to a Cabinet, you automatically have VESA rights to that document.
+
+External Users
+
+A Cabinet Administrator can set a specific flag to allow or not allow External Users to create documents and folders in a Cabinet. If it is allowed, then when an External User creates a document, they will have VESA rights to the document and the cabinet default will apply, or if they are using Profile-based security, that will apply.
+
+When an external user is created, they are added to an External Group. Generally when setting up the cabinet access default, External Groups are given No Default Access. This means that the external users will see the cabinet, but will not see any documents or folders, unless they have been given specific rights to a folder or document. The Repository Administrator can allow a Cabinet Administrator to create External Users and External Groups for that specific cabinet. In that case, the External Users created at the Cabinet level will be added to the Repository list of external users, however the groups created at the cabinet level will only be available for that cabinet.
+
+When an external user or group has access to a document, an "X-man" icon will show next to the document name in the Info dialog or the profile. This is also shown on list views, but in some circumstances, that icon will not be refreshed when external access is removed.
+
+(NOTE: When an option is selected, such as email, it will email the official copy at the time you select the option not at the time you visit the page.)
+
+Access Inheritance
+
+The Cabinet Administrator can choose to set the flag called "Inherit Access Rights from Folders", which means that any time a document is filed in a folder, it will inherit the same Access Rights as the folder. This setting overrides any default that may have been set for the Cabinet security. This setting will also override any Profile-based Security which may be defined. This flag is set by default if your Repository was initially defined to encourage the usage of Folders.
+
+If the flag is set, the following behavior occurs:
+
+When access rights inheritance is enabled and a new document is created in or imported into a folder, the access list of the new item is set to match the access list of the folder plus grant the current user VESA rights. Cabinet default security is ignored in this case. Note that if profile-based security is enabled and the user subsequently fills out a profile for the new item, the access list may be changed so that it no longer matches the folder access list.
+
+When access rights inheritance is enabled, existing documents can only be filed by users who have A rights to those items. During filing, the access lists of the items are changed to match the access list of the folder plus the current user’s rights remain as is.
+
+When access rights inheritance is enabled for a cabinet that already contains documents, the access rights of the existing documents are not affected until they are subsequently filed or re-filed into a folder.
+
+
+Workspace Access Inheritance
+
+There is also a cabinet flag for workspace access inheritance. This flag, "Allow documents to be filed in workspaces", is set if your cabinet has workspaces configured in it. It says, "When a workspace is selected as a filing destination, the document inherits the workspace's profile values and the internal members of the workspace's ACL, but the document isn't actually filed in a folder." Any time a document is "filed" to a workspace (as opposed to just being profiled to it), it will inherit the same access rights as the workspace. This setting overrides any default access that may have been set for the Cabinet security.

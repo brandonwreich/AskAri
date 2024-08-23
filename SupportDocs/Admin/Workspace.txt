@@ -1,0 +1,157 @@
+Workspace Template
+
+
+Table of Contents:
+- Overview
+- Define a Workspace Template
+- Templates Based on Matter Types
+
+
+Overview
+If you have at least one custom profile attribute that has a lookup table, you can choose to define and use attribute-based Workspaces in the cabinet, based on a profile value (or linked profile values). For example, Client and Matter could be attributes that a law firm would use. A Matter or Project Workspace can display all of the documents, emails, etc. designated or assigned to the selected profile value (Client). Each workspace can be tailored for each specific profile value to provide a single Matter-centric view of the documents, emails, etc.
+For example, if you were configuring an account for a law firm, you would define the Workspace Template to be based on the Client/Matter profile pair giving users a common location (workspace) for all documents, emails, etc. related to each specific Matter. Each user can select their own unique list of Matter Workspaces with which they are working. This is displayed in a list called Favorite Matters. By selecting a Matter in the Favorite Matters list, documents and emails, etc., can be more easily accessed for a specific Matter.
+Note: A certified NetDocuments Partner will typically assist a new customer/firm with configuring their workspace template(s). A workspace template should rarely be modified once actual workspaces start being created using that template. We recommend that you consult NetDocuments Support or a certified NetDocuments Partner before making changes to your workspace template.
+
+
+Define a Workspace Template for a Cabinet
+Note: This article refers to workspace templates being based upon "matters", as matter is a common workspace base attribute. However, these templates can be made and used for any attribute you base your workspaces on (projects, cases, etc.)
+To define Matter/Project Workspace Templates in the cabinet: On the Cabinet Administration page, click the link at the top left-hand side of the page called Define Workspace Templates.
+You will be taken to a page that is generally defined once for the cabinet using the Default Template. (You can also create multiple templates, if you choose, based on Matter Types as described below)
+
+Step 1:  Base workspaces on this attribute
+From the dropdown list, select the Attribute (i.e. Matter) on which to base the workspaces. The lookup table for the Profile value to be used must be uploaded prior to selecting this value because only profile attributes with tables already defined will show in the dropdown list. THIS ATTRIBUTE CAN NOT BE CHANGED ONCE A WORKSPACE HAS BEEN CREATED. Note that since Matters are commonly linked to Clients, that linkage will automatically be used for this template when the Matter Profile attribute is selected.
+
+Step 2:  Plural form of attribute name
+Enter the plural form of the attribute selected above. If you selected a profile attribute such as Matter, then you would enter the word "Matters" without the quote marks in this entry field (this is defaulted, but can be changed).
+
+Step 3:  Organize documents within workspaces by this attribute
+Choose to designate one of your custom profile attributes (not including the one that workspaces are based on) to organize your workspaces. We recommend that you use the Document Type profile attribute for this organization. If you have designated such an attribute, whenever a workspace is created, all existing documents will be automatically placed into folders, Saved Searches or Filters which will be created based on that attribute – i.e. Document Types.
+
+Step 3a: Organizing Containers
+Administrators have three options to use in order to automatically organize documents in a workspace: folders, Saved Searches, or Filters.
+See our guide for Comparing Folders, Filters, and Saved Searches for more information.
+If the folders option is selected, any new document added and profiled will automatically be placed in a workspace folder matching the organizing attribute (usually Document Type). If a folder does not yet exist, a new folder will be automatically created in the workspace.
+For Saved Searches, a Saved Search will be created for each document type, and will search for all documents that match that criteria. Due to the nature of a search, a document cannot be "filed" to a Saved Search. A document can only be profiled to match that search's criteria.
+However, a Filter can be thought of as a saved search to which items can be filed. It will appear just like a folder in folder lists such as the import/upload page and the Move/Copy dialog. Filters are the recommended option because you get the best functionality of both folders and Saved Searches.
+
+Step 3b: Workspace Filter Name
+If the Document Type field has both a key and a description, administrators will see an additional option to format the name of the organizing filters (or saved searches or folders).
+
+Step 4:  Enable the Workspace
+Check the box to Enable Workspaces in the cabinet.  Even though you have setup the Template and the above information, unless this flag is checked, users will not have the ability to create, view, or use workspaces.
+
+Step 5:  Workspace Title and Description
+You can enter a title that will be used for all workspaces created (for example "Matter Workspace") by just entering the words Matter Workspace OR the recommended method is to enter variables so that each workspace created uses the actual profile values from the lookup table.  This could be the specific Matter or Customer value if one of these attributes was selected.
+If you click the Examples link, you can select the format you want from the list.  If you need to further adjust it, you can edit it.
+The default variable title for a workspace using an attribute with a key and description for a Matter (not linked to a Client) would be as follows:
+[MatterKey] – [MatterDescription]
+and when a workspace is created, it would be titled as follows, for example:
+1234 – Acme vs. Smith Enterprises
+Or, if you just had a Matter value with no description, you would have the following variable:
+[MatterValue] (or you could use [MatterKey])
+and when a Workspace is created, it would be titled as follows, for example:
+Acme vs. Smith Enterprises
+Or more commonly, you will have Client and Matter linked, so you would have the following definition. If you had Client and Matter Profile values linked and each had a code and description and you wanted both to show on the title, the variable could be entered as follows:
+[ParentKey] – [ParentDescription] – [MatterKey] – [MatterDescription]
+and when a Workspace is created, it would be titled as follows, for example:
+101 – Acme Company – 2001 – Acme vs. Smith Enterprises
+Another alternative is as follows. If you had Client and Matter Profile values linked and each had a code and description and you wanted both to show on the title, the variable could be entered as follows:
+[ParentDescription] – [ParentKey].[MatterKey] – [MatterDescription]
+and when a Workspace is created, it would be titled as follows, for example:
+Acme Company – 101.2001 – Acme vs. Smith Enterprises
+We recommend the following as the preferred order if your people are familiar with the client and matter numbers.  If the users are more familiar with the client name and matter descriptions, you may want to reverse the order.
+Remember, the workspaces will be listed alphabetically in the Favorite Matters list and also in EMS in Outlook. If you had Client and Matter Profile values linked and each had a code and description and you wanted both to show on the title, the variable could be entered as follows:
+[ParentKey].[MatterKey] – [MatterDescription] – [ParentDescription]
+and when a Workspace is created, it would be titled as follows, for example:
+101.2001 – Acme vs. Smith Enterprises – Acme Company
+NOTE: The above order may be preferred if you are using the NetDocuments EMS, because the folders will be listed alphabetically in Outlook and when names of Outlook folders are truncated to 50 characters, the Client and Matter Keys should be preserved more often. The following variables can be used when creating the Workspace template:
+[Key], [Description], [Value], [ParentKey], [ParentDescription],
+as well as any set text as described above. Separators can be common symbols such as . – _ : ; and spaces.
+
+Workspace Description
+Whatever you enter into the description will be displayed in each workspace created.  Each individual workspace can be modified for that specific matter.  You can include links to external website, email addresses, or other information in this description.
+
+Step 6: Workspace List View Default Sort Order
+Administrators have the option to default the sort order for the workspace list views – Documents, Email, and Both. This default will apply to all workspaces and all users. As with the rest of the template, these changes will only apply to workspaces created or refreshed after the template is modified.
+
+Step 7: Profiling the Workspace Template
+For each workspace template, you can also define specific values to be placed in the profile of each workspace. This is generally used if you are creating a different template for each Practice Area. In that situation, you may want to complete the Practice Area profile field with the corresponding value for the Practice Area. You would NOT want to profile Client and Matter fields or Author and Document Type fields for the template. Each workspace created by the template will then be profiled with the profile values you assigned to the template.
+You can also set the access rights for the Workspace Template. This allows you to set rights for workspaces that may be different from your general profile-based security or cabinet-level security. Each workspace created by the template will be stamped with the rights you set for the template.
+Profile-based security is preferred and recommended over workspace template access.
+
+Step 8: Configure NetDocuments Workspace Tabs
+You can configure NetDocuments tabs for new and refreshed workspaces.
+IMPORTANT NOTE: Workspace Templates are applied when creating new workspaces, or when existing workspaces are refreshed. Enabling a tab in a workspace template will not display the tab in an existing workspace unless the workspace is refreshed.
+To configure tabs, select the options under each tab name.
+
+- Overview - Choose whether to display web pages in one or two columns
+Select Add web page to define a new web page template that will be displayed in each workspace. Enter the web page label. Select the Visible to external members check box if you want any external users given access to the workspace be able to see this web page. In Height, set the number of pixels. Then, paste URL. You can insert a merge code from the drop-down box.
+
+- Documents - Choose whether to display containers in one or two columns
+Select Add folder to define a new folder template that will be created automatically in each workspace. Enter the folder name. In Number of items to display, set the number of documents or other items to show in the Workspace View without selecting More. (You can enter 0 items and only the header will appear in the workspace. You will need to select the header to show the items.) Select the Visible to external members check box if you want any external users given access to the workspace be able to see this folder. Then, select the profile attributes that you want to show in this folder. They will appear in the order they are listed in the box. Drag to reorder them.
+
+- CollabSpaces - Enable CollabSpaces. See CollabSpaces for more information
+- Threads - Enable ndThread. See ndThread for more information
+- Sets - Enable SetBuilder. See SetBuilder for more information
+- Tasks - Enable Tasks (will be released in the near future)
+
+Step 9: Define Template Folders, Saved Searches, or Filters
+Make sure the Default Template is selected (or another one if you are creating more than one). Next, define the default Saved Searches, Folders, or Filters that will be used with the Workspace Template.  When an actual Workspace is created from this Template, it will be automatically populated with the Saved Searches, Folders, or Filters that you have defined here.  The Saved Searches, Folders, or Filters will show in the same order as they appear on the template.  When a Workspace is created, a User with either VES or VESA can modify that specific Workspace by adding folders or Saved Searches and/or adjusting these defaults.
+Once a workspace gets created by the template, it has no more connection to the template. You may want to set a simple Default Template with only Saved Searches for Documents and Emails.  Folders can be added to specific workspaces after the workspace gets created. It is highly recommended that you create at least one Saved Search that will select all items related to a specific Matter Workspace, otherwise some items will never show up in the workspace if they are not profiled correctly.  The Saved Searches described below would display all of the potential documents and other items related to a specific matter.
+Example Workspace Template with 'Documents' and 'Email' Saved Searches
+Add Saved Search - Click Add Saved Search and continue the process the same as a folder.  You will also need to go to a separate browser and define a Search Criteria that you will copy and paste into the Saved Search criteria field as shown below or you can copy one of the syntax examples described below.
+
+- Email Saved Search:
+For example, if you wanted to create a Saved Search that would capture all email messages that have been assigned to a specific Client/Matter, you would do the following: Do a search by selecting All Cabinets, then select 'Emails Only' under the file extension field. Next, click the Search button. Go to the top of the Search Results page and copy the Search Criteria and Paste it into the Search Criteria field of the Workspace Saved Search that you are defining. The syntax will look like the following: =11( msg )
+
+- Documents Saved Search:
+If you wanted to create a Saved Search to capture only documents assigned to a specific Client/Matter, you would do a search similar to the Email example above to generate the search syntax. (select 'Documents Only') The syntax would look like the following: NOT =11( msg OR ndsq OR ndfld ) Note that the this syntax will include files such as Word, Excel, PowerPoint, PDF, and NetDocuments Discussions, and excludes emails, Saved Searches, and folders.
+
+- Unprofiled Items Saved Search:
+Another option is to create a template Saved Search that searches for all items in that workspace that have incomplete profiles. To generate the syntax for this search, select the cabinet, check the box to search for unprofiled documents, then enter this into the Everything field: NOT =11 (ndsq OR ndfld). Go to Search Result options > Show Criteria to copy the Search Criteria. It should look something like this:
+
+=14 ([NG-XXXXXXXX]) NOT =11 (ndsq OR ndfld)
+- Search in Other Workspaces (dynamic Saved Search criteria):
+
+Administrators can define dynamic Saved Search criteria on a workspace template. Use the "Search for documents in another workspace with the same parent" under the Examples link.
+The intended use case is for a firm that has a general Matter for each client. If the firm wants to display documents from this general matter on all other matter workspaces, then an administrator can define a Saved Search on the template that searches for documents based on a workspace's parent (client) key. The administrator then only needs to define one Saved Search on the template, and saved searches will be dynamically created on the workspaces with the appropriate search criteria.
+In the example below, each of the firm's clients have a general 0000 Matter. Each of a given client's workspaces will have a Saved Search with its own unique criteria that displays documents from the client's general 0000 workspace on all other workspaces for that client.
+The criteria might look like this:
+[ParentKey] =1002(0000)
+
+'ParentKey' is a variable placeholder that will insert the workspace's client key into the search criteria when the saved search is created. '1002' is the Matter attribute number, and '0000' is the matter key for the general matter.
+
+You might want to remove the "=1002(0000)" portion to simply run a search for all items related to the client across all matters for that client.
+
+Understanding Search Criteria
+
+On the Advanced Search page, if I enter the following criteria:
+
+The resulting search criteria can be broken down as follows:
+
+Once you have defined your search, copy and paste your syntax into the search criteria field as shown:
+
+Set the number of items (documents) to show under the Saved Search on the Workspace Summary View.
+
+Note: You can enter 0 items and only the header will show on the Workspace Summary View. You can then click the header to show the items. Finally, select the attributes that you want to show on this Saved Search.  The attributes will show in the order they are listed on this dialog.  You can drag to re-order them.
+
+Note: If you uncheck the option that says: "Restrict search to the current workspace," the Saved Search will not include the Client Matter or other criteria on which the workspaces are based.  This can be used to display a set of documents for each workspace that meet the criteria of the category.  As an example, you could display a set of documents that may be instructions that you want to be available in all workspaces.  This way you do not have to duplicate the documents for each workspace. Finally, make sure after you have completed all of the steps that you click the Save Template button. Click 'Save Changes' to create the Saved Search.
+
+Pre-Define Doc Type Workspace Filters
+
+If you have chosen the option to organize your documents using Filters, you will have the option of pre-defining the Filters that will display by default on each workspace.
+
+The Filter Layout can also be defined on the template page. The default number of items that will display is 20, but usually 3-5 is ideal. You can choose up to 8 attributes (metadata) to display.
+
+Templates based on Matter Types
+If you choose to, you can create additional templates that are based on a Matter type. To set up a template based on a matter type, do the following:
+
+1. Create the templates that you want by clicking Add and giving them names that correlate with the Matter Types that you have, such as Litigation, Real Estate, etc.  You can enter each of the types that you want.
+
+2. Next select each type that you have created and complete the title, categories and folders.
+
+3. Then click the Save Templates button.
+
+4. Add Matter Types to your Client/Matter look-up table as shown below.  Each Matter Type that is added to the table must match exactly the name of the template for that Matter Type.  If you want a Matter to use the Default Template, that can be left blank in the table.
+
+Caution: A Workspace Template should not be modified once actual workspaces start being created using that template. Existing workspaces will only reflect changes in the new template once you use the Refresh option for a selected workspace. We recommend that you consult NetDocuments Support or a certified NetDocuments Partner before making changes to your workspace template.

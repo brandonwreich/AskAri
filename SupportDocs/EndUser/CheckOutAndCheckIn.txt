@@ -1,0 +1,58 @@
+Check Out a Document
+Mar 6, 2024•Knowledge
+Content
+When you want to edit a document, you must "Check out" the document. This will lock it from being edited by other users while you are working on it. So, you can also use Check Out as a way to prevent others from editing a document temporarily. In effect, the document is changed to a View-only state for anyone else who has access to the document while you have it checked out. Click here for information about Checking In documents.
+
+(NOTE: You can do a Ctrl Click and open a document in View Only mode if you are not editing it.  When this occurs, it does not get checked out or placed on the Check In List.)
+
+There are two ways to Check Out a document:
+
+You can manually check out a document when you want to work on it locally (outside of NetDocuments). A copy of the document is transferred to your local drive and the online copy is locked from editing by others until you manually check the document back in.
+You can automatically check out a document when working on a document in the short term or when you know you will have direct access to NetDocuments.
+Automatic Check out
+
+When a document is displayed on a Home Page shortcut, a search result, a Saved Search, Recent Docs list, or through folder navigation, simply click once on the document name. It will load automatically into its native application if that application (such as Word, WordPerfect, etc.) exists on the workstation.
+
+NOTE: The automatic check out/in feature is only available when ndOffice 3.0+ is installed.
+
+When a document is opened in NetDocuments with ndOffice running, it gets "automatically" checked out to provide concurrency protection. That automatic checkout function is not to be confused with the manual checkout process described later on this page. There are times, for example, when an Internet connection is lost while a document is open, and a document could get left in the automatically checked out state. In those cases, the current editor should re-open the document and force a check in of it. This will upload any changes that were made to the Echoed document, but did not get uploaded.
+
+If no changes were made to the document, you may simply close the document to check it back in. As long as the document has been automatically checked out, it will automatically be checked back in.
+
+Anyone with Administer (A) rights to the document such as the Creator, or someone else with A rights can also "force" a check in of the document, when required, by clicking the link to open the document and selecting the "force check in" option on the pop-up dialog.
+
+WHEN "FORCING" THE CHECK IN OF A DOCUMENT, ALWAYS VERIFY FIRST WITH THE CURRENT USER AND IF POSSIBLE THE CURRENT USER SHOULD CHECK THE DOCUMENT IN. IF THAT IS NOT POSSIBLE, THE USER WITH "A" RIGHTS CAN DO A FORCED CHECK IN. IF THAT OCCURS, THE USER FORCING THE CHECK IN WILL HAVE THEIR CHANGES SAVED IN A NEW (OFFICIAL) VERSION OF THE DOCUMENT. BOTH USERS' CHANGES WILL BE SAVED, BUT WILL BE IN DIFFERENT VERSIONS OF THE DOCUMENT AND WILL NEED TO BE MANUALLY RECONCILED BY ONE OF THE USERS.
+
+Manually Checking out a Document
+
+You can maintain possession of a checked out document for any period of time as needed.
+Other users can View but not modify the document (except users with VESA rights who can force the check in of a document).
+If using aCollabSpace, a single document can be checked out without affecting rights of other documents in the CollabSpace. Hint: Because of this, you can choose to give edit rights to users in a CollabSpace and still "lock" them from editing one or more of the documents by doing a manual check out of the document.
+When you check the document back in, you can:
+
+ Replace the copy that is in NetDocuments with your newly edited document, or reset the document in NetDocuments for editing. TIP: Use this option if you lose the checked-out document or you checked it out without copying to your local drive or if you simply do not want to keep the changes you made on your local copy.
+Use the following steps to manually check out a document:
+
+1.  Select the Check Out option for the document you are checking out. The following dialog box is displayed:
+image.png
+2.  Select the option you want. Use the Check Out and save a local copy if you want to work on the document locally outside of NetDocuments. If you just want to set the document to a checked out state, use the Check Out only option. You can use this option if you want to check in another document in its place or if you want to "lock" the document for viewing only by other users.
+
+3.  (Optional) Enter a note for other shared users of this document. This is a message that will be displayed when another shared user clicks on the document's name while it is checked out. It can be used for information purposes as to why you manually checked the document out.
+
+4.   Click Check Out.
+
+5.   In the Save As dialog box, choose the local location where you want to save the document.
+
+6.   Click Save.
+Checked out documents are noted on all List Views with a Check mark next to the Document Name. Hovering over the Check mark will tell you who checked it out and when they checked it out. This information is also noted on the Profile Page.
+
+NOTE: Any document checked out by any other user after you display a list view, will not be designated as Checked out, unless you refresh the page.
+
+
+PDF Page Viewing
+
+To configure viewing of PDF files, go to Settings > Application Settings, and then select the PDF Viewing check box.
+
+Now, after you select a PDF document name, the PDF opens in a browser window instead of loading in the native application:
+image.png
+This functionality is available in all browsers.
